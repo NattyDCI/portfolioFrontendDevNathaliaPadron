@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useState } from "react";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
+  <div>what is up</div>  )
 }
 
 export default Navbar

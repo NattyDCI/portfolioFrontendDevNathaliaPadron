@@ -1,28 +1,16 @@
-import Abilities from "./Abilities";
-import Button from "./Button";
-import Detailedme from "./Detailedme";
-import JobPosition from "./JobPosition"
-import Navbar from "./Navbar";
-import ProjectCards from "./ProjectCards";
-import Skills from "./Skills";
-import Trademark from "./Trademark";
+import Hero from "./Pages/Hero";
 import About from "./Pages/About";
+import ProjectSection from "./Pages/ProjectSection";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
-import ProjectSection from "./Pages/ProjectSection";
+import Navbar from "./Navbar"
 
 export {
-    Abilities,
-    Button,
-    Detailedme,
-    JobPosition,
     Navbar,
-    ProjectCards,
-    Skills,
-    Trademark,
+    Hero,
     About,
-    Contact,
-    Footer,
     ProjectSection,
+    Contact,
+    Footer, 
 };
 

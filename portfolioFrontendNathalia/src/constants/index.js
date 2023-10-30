@@ -1,7 +1,4 @@
-/* all the static text that will go on the website, 
-we even want to have a list of links so that we can map 
-them and this will save time */
-
+import React from "react";
 import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo, paperplaneIcon, personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop } from "../assets";
 
 export const navLinks = [
@@ -121,7 +118,7 @@ export const contactForm = {
         },
     ],
     sendbutton: "send",
-    icon: "paperplaneIcon"
+    icon: paperplaneIcon,
 }
 
 export const footer = [
