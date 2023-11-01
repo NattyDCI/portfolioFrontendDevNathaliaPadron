@@ -25,19 +25,19 @@ export const features = [
         id: "feature-1",
         icon: agile,
         title: "Agile",
-        content: "Experience with a methodology that emphazises collaboration and continous improvement.", 
+        content: "I am familiar working with Agile framework, involved in the planning and improving the digital interface with each iteration", 
     },
     {
         id: "feature-2",
         icon: design_minded_icon,
         title: "Design-minded",
-        content: "The driving aspect for any of my designs has a start in the consideration of human interaction and focus on the design principles.", 
+        content: "The driving aspect for my designs has a start in the consideration of human interaction. I also love to learn about new UX/UI trends", 
     },
     {
         id: "feature-3",
         icon: multiculturalIcon,
         title: "Multicultural",
-        content: "I am an adaptable individual who has had experience working in a multicultural team.", 
+        content: "I consider myself as an adaptable and open individual, I speak fluent english and german", 
     },
 ]
 
