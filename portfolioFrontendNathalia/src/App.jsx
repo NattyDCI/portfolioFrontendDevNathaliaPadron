@@ -6,7 +6,8 @@ import {
   About,
   ProjectSection,
   Contact,
-  Footer
+  Footer,
+  Abilities
 } from "./components";
 
 const App = () => {
@@ -21,10 +22,11 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           < Hero />
+          < Abilities />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.Center}`}>
         <div className={`${styles.boxWidth}`}>
           < About />
           < ProjectSection />

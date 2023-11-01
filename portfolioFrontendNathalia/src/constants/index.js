@@ -1,22 +1,22 @@
 import React from "react";
-import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo, paperplaneIcon, personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop } from "../assets";
+import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo,  personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop, hamburguerMenuIcon, closeIcon } from "../assets";
 
 export const navLinks = [
     {
         id: "home",
-        title: "Home",
+        title: "HOME",
     },
     {
         id: "work",
-        title: "Work"
+        title: "WORK"
     },
     {
         id: "about",
-        title: "About"
+        title: "ABOUT"
     },
     {
         id: "contact",
-        title: "Contact"
+        title: "CONTACT"
     }
 ];
 
@@ -55,7 +55,7 @@ export const about =
             sassLogo,
             typescript_logo,
             reactLogo,
-            nodejslogo,
+            nodejsLogo,
             mongodbLogo,
         ],
     }
