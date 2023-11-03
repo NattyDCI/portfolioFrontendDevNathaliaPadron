@@ -12,6 +12,7 @@ import {
 
 const App = () => {
   return (
+    
     <div className='bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -22,12 +23,14 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           < Hero />
-          < Abilities />
         </div>
-      </div>
+      </div>   
+      < Abilities />
+      
 
       <div className={`bg-primary ${styles.paddingX} ${styles.Center}`}>
         <div className={`${styles.boxWidth}`}>
+          
           < About />
           < ProjectSection />
           < Contact />

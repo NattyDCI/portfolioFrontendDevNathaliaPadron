@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../style";
 import { profile_bewerbung_foto } from "../../assets";
-import { Button, Abilities } from "../index"
+import { Button } from "../index"
 
 const Hero = () => {
   return (
