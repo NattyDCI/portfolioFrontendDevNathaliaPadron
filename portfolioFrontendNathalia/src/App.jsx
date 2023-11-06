@@ -19,12 +19,16 @@ const App = () => {
            < Navbar />
         </div>
       </div>
-
       
-    
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </div>
+      
       <div className={`bg-primary ${styles.paddingX} ${styles.Center}`}>
         <div className={`${styles.boxWidth}`}>
-          < Hero />
+         
           < About />
           < ProjectSection />
           < Contact />

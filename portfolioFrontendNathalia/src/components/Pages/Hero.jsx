@@ -5,29 +5,28 @@ import { Abilities, Button } from "../index";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex flex-col sm:flex-row justify-center items-center mb-5`}>
-      <div className={` ${styles.flexStart} flex-col xl:px-0 ss:px-16 px-4`}>
-          <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] text-white leading-[50px] w-full">
-            Junior  <br/>
-            <span className="text-gradient">Frontend Developer</span>
-            <p className={`font-bitter font-semibold ss:text-[24px] text-[30px] ss:leading-[40px] leading-[30px] mt-5`}>
-                Hey there! <br />
-                I'm Nathalia Padrón. <br className={`md:hidden`} />
-                Based in Stuttgart, Germany.
-            </p>
-          </h1>  
-          < Button />
-          
+    <section id="home" className={`flex flex-col justify-between items-center mb-5`}>
+      <div className={` ${styles.flexStart} sm:flex-row flex-col ss:px-16 px-4`}>
+        <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] text-white leading-[50px] w-full">
+          Junior  <br/>
+        <span className="text-gradient">Frontend Developer</span>
+        <p className={`font-bitter font-semibold ss:text-[24px] text-[30px] ss:leading-[40px] leading-[30px] mt-5`}>
+          Hey there! <br />
+          I'm Nathalia Padrón. <br className={`md:hidden`} />
+          Based in Stuttgart, Germany.
+        </p>
+        < Button />
+        </h1>  
+        <div className={`relative xl:ml-5`}>
+          <img src={profile_bewerbung_foto} alt="" className={`w-[400px] h-[100%] relative z-[5]`} />
+          {/* gradient start */}
+          <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+          <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+          <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+          {/* gradient end */}
+        </div>  
       </div>
 
-      <div className={`relative xl:ml-5`}>
-        <img src={profile_bewerbung_foto} alt="" className={`w-[400px] h-[100%] relative z-[5]`} />
-        {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        {/* gradient end */}
-      </div>
       <div>
         < Abilities />
       </div>

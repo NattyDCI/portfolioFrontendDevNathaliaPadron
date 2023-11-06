@@ -9,7 +9,7 @@ import { hamburguerMenuIcon } from "../assets";
 import styles from "../style";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);  
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
