@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "../style";
 import { features } from "../constants";
-import { multiculturalIcon } from '../assets';
 
 const abilities = () => {
   return (

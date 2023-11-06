@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../style";
 import { profile_bewerbung_foto } from "../../assets";
-import { Button } from "../index"
+import { Abilities, Button } from "../index";
 
 const Hero = () => {
   return (
@@ -27,6 +27,9 @@ const Hero = () => {
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
+      </div>
+      <div>
+        < Abilities />
       </div>
 
       
