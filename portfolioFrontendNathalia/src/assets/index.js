@@ -33,9 +33,3 @@ export { default as closeIcon } from "./closeIcon.svg";
 
 
 
-
-
-
-
-
-

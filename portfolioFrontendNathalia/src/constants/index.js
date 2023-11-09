@@ -42,23 +42,136 @@ export const features = [
 ]
 
 export const about = 
-    {
-        title: "about",
-        parragraf1: "Hi there! 👋🏻 , My name is Nathalia Padron. I am originally from Caracas, Venezuela and I am currently based in Stuttgart, since 2016.",
-        parragraf2: "Before making the leap into Front-end Design I studied Product Design in IDC ( Instituto de Diseno de Caracas ) and worked several years as a Grafic Designer in Germany and Venezuela.",
-        parragraf3: "I feel comfortable working with CSS and Javascript and I continue to learn React, I would love to extend my skillset to perform tasks related to UX/UI. Also, I have recently received a certification in MERN Stack and continue to learn and develop my understanding towards the backend.",
-        recently: "Recently I have been working with the following technologie Stack",
-        logos: [
-            htmlLogo,
-            cssLogo,
-            javascriptLogo,
-            sassLogo,
-            typescript_logo,
-            reactLogo,
-            nodejsLogo,
-            mongodbLogo,
-        ],
-    }
+    [ 
+        {   
+            name: "title",
+            content:"about",
+        },
+        {   
+            name: "parragraf1",
+            content: "Hi there! 👋🏻 , My name is",
+        },
+        {   
+            name: "parragraf2",
+            content: "Nathalia Padron.",
+        },
+        {   
+            name: "parragraf3",
+            content: " I am originally from Caracas, Venezuela and I am currently based in Stuttgart, since 2016.",
+        },
+        {   
+            name: "parragraf4",
+            content: "Before making the leap into",
+        },
+        {   
+            name: "parragraf5",
+            content: "Front-end Design",
+        },
+        {   
+            name: "parragraf6",
+            content: " I studied",
+        },
+        {   
+            name: "parragraf7",
+            content: " Product Design in",
+        },
+        {   
+            name: "parragraf8",
+            content: " IDC ( Instituto de Diseno de Caracas )",
+        },
+        {   
+            name: "parragraf9",
+            content: " and worked several years as a",
+        },
+        {   
+            name: "parragraf10",
+            content: " Grafic Designer",
+        },
+        {   
+            name: "parragraf11",
+            content: " in Germany and Venezuela.",
+        },
+        {   
+            name: "parragraf12",
+            content: "I feel comfortable working with",
+        },
+        {   
+            name: "parragraf13",
+            content: " CSS"
+        },
+        {   
+            name:"parragraf14",
+            content:" and",
+        },
+        {   
+            name:"parragraf15",
+            content: " Javascript",
+        },
+        {   
+            name: "parragraf16",
+            content: " and I continue to learn",
+        },
+        {   
+            name:"parragraf17",
+            content:" React.",
+        },
+        {   
+            name: "parragraf18",
+            content: "  I would love to extend my skillset to perform tasks related to",
+        },
+        {   
+            name: "parragraf19",
+            content: " UX/UI.",
+        },
+        {   
+            name: "parragraf20",
+            content: "  Also, I have recently received a certification in MERN Stack and continue to learn and develop my understanding towards the backend.",
+        },
+        {   
+            name: "parragraf21",
+            content: "  Recently I have been working with the following", 
+        },
+        {   
+            name: "parragraf22",
+            content: " technologie Stack", 
+        },
+
+    ]
+
+    export const logos = [
+        {
+            logo: htmlLogo,
+            name:"hmtl",
+        },
+        {
+            logo: cssLogo,
+            name:"css",
+        },
+        {
+            logo: javascriptLogo,
+            name:"javascript",
+        },
+        {
+            logo: sassLogo,
+            name: "sass",
+        },
+        {
+            logo: typescript_logo,
+            name: "typescript",
+        },
+        {
+            logo: reactLogo,
+            name: "react",
+        },
+        {
+            logo: nodejsLogo,
+            name: "nodeJS",
+        },
+        {
+            logo: mongodbLogo,
+            name: "mongoDB",
+        },
+    ]
 
     export const technologieStack = [
         {

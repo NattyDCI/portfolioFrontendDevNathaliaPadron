@@ -6,11 +6,11 @@ import { Abilities, Button } from "../index";
 const Hero = () => {
   return (
     <section id="home" className={`flex flex-col justify-between items-center mb-5`}>
-      <div className={` ${styles.flexStart} sm:flex-row flex-col ss:px-16 px-4`}>
-        <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] text-white leading-[50px] w-full">
+      <div className={` ${styles.flexCenter} sm:flex-row flex-col ss:px-16 px-4 mt-20`}>
+        <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] text-white leading-[45px] w-full">
           Junior  <br/>
         <span className="text-gradient">Frontend Developer</span>
-        <p className={`font-bitter font-semibold ss:text-[24px] text-[30px] ss:leading-[40px] leading-[30px] mt-5`}>
+        <p className={`font-bitter font-semibold ss:text-[24px] text-[16px] ss:leading-[40px] leading-[20px] mt-5`}>
           Hey there! <br />
           I'm Nathalia Padrón. <br className={`md:hidden`} />
           Based in Stuttgart, Germany.
@@ -18,7 +18,7 @@ const Hero = () => {
         < Button />
         </h1>  
         <div className={`relative xl:ml-5`}>
-          <img src={profile_bewerbung_foto} alt="" className={`w-[400px] h-[100%] relative z-[5]`} />
+          <img src={profile_bewerbung_foto} alt="" className={`w-[250px] h-[100%] relative z-[5] sm:mb-0 mb-10 sm:mt-0 mt-2`} />
           {/* gradient start */}
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>  
       </div>
 
-      <div>
+      <div className={`md:py-5 py-12`}>
         < Abilities />
       </div>
 
