@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../style";
 import { profile_bewerbung_foto } from "../../assets";
-import { Abilities, Button } from "../index";
+import { Abilities, GetInTouch } from "../index";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
           I'm Nathalia Padrón. <br className={`md:hidden`} />
           Based in Stuttgart, Germany.
         </p>
-        < Button />
+        < getInTouch />
         </h1>  
         <div className={`relative xl:ml-5`}>
           <img src={profile_bewerbung_foto} alt="" className={`w-[250px] h-[100%] relative z-[5] sm:mb-0 mb-10 sm:mt-0 mt-2`} />

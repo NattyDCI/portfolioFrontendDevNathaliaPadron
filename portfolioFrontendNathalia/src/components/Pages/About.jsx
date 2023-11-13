@@ -7,7 +7,7 @@ import styles, { layout } from '../../style';
 const About = () => {
 
   return (
-    <div className={`  flex-col py-64 w-full border-2 items-center justify-center `}>
+    <div className={`  flex-col py-64 w-full items-center justify-center `}>
       <h1 className='text-white text-center text-4xl font-opensans font-bold'>
           ABOUT
       </h1> 

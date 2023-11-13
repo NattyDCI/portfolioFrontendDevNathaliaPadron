@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "../style";
 import { features } from "../constants";
 
-const abilities = () => {
+const Abilities = () => {
   return (
     <div className={`flex sm:flex-row flex-col gap-4 xs:px-4 ss:px-6 sm:px-8 md:px-20 lg:px-40 xl:px-42 px-6 rounded-md overflow-auto`}>
       {features.map((feat, index) => 
@@ -24,4 +24,4 @@ const abilities = () => {
   )
 }
 
-export default abilities
+export default Abilities

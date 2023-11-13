@@ -1,13 +1,16 @@
 import React from 'react';
-import ProjectCards from '../ProjectCards';
+import ProjectCard from '../ProjectCard';
 
 const ProjectSection = () => {
   return (
-    <div>ProjectSection
+    <section className='px-5 my-32 mx-auto max-w-7xl'>
+      <div className='text-center text-white'>
+        ProjectSection
+      </div>
         <div>
-            < ProjectCards />
+            < ProjectCard />
         </div>
-    </div>
+    </section>
   )
 }
 

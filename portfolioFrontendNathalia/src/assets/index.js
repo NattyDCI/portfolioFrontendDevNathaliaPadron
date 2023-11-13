@@ -24,7 +24,7 @@ export { default as sassLogo } from "./sassLogo.png";
 export { default as typescript_logo } from "./typescript_logo.png";
 export { default as hamburguerMenuIcon } from "./hamburguerMenuIcon.svg";
 export { default as closeIcon } from "./closeIcon.svg";
-
+export { default as Neuromorphic_music_player } from "./Neuromorphic_music_player.png"
 
 
 

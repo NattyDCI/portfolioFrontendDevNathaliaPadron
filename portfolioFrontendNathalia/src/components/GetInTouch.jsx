@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../style"
 
-const button = () => {
+const getInTouch = () => {
   return (
     <div className={`${styles.flexCenter} w-[140px] h-[60px] border-2 bg-blue-gradient rounded-md mt-6 p-[2px] cursor-pointer`}>
       <div className={`${styles.flexCenter} flex-col bg-primary w-[100%] h-[100%]`}>
@@ -13,4 +13,4 @@ const button = () => {
   )
 }
 
-export default button
+export default getInTouch;

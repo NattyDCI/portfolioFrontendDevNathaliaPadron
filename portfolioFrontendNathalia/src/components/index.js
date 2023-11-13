@@ -4,7 +4,7 @@ import ProjectSection from "./Pages/ProjectSection";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
 import Navbar from "./Navbar"
-import Button from "./Button"
+import GetInTouch from "./GetInTouch"
 import Abilities from "./Abilities"
 
 export {
@@ -14,7 +14,7 @@ export {
     ProjectSection,
     Contact,
     Footer, 
-    Button,
+    GetInTouch,
     Abilities,
 };
 
