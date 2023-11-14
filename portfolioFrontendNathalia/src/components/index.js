@@ -6,6 +6,7 @@ import Footer from "./Pages/Footer";
 import Navbar from "./Navbar"
 import GetInTouch from "./GetInTouch"
 import Abilities from "./Abilities"
+import ProjectCard from "./ProjectCard";
 
 export {
     Navbar,
@@ -16,5 +17,6 @@ export {
     Footer, 
     GetInTouch,
     Abilities,
+    ProjectCard
 };
 

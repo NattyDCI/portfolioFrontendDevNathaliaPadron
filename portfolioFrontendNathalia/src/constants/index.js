@@ -1,5 +1,5 @@
 import React from "react";
-import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo,  personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop, hamburguerMenuIcon, closeIcon } from "../assets";
+import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo,  personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop, hamburguerMenuIcon, closeIcon, Mlay_Tours_Project, Neuromorphic_music_player } from "../assets";
 
 export const navLinks = [
     {
@@ -262,3 +262,38 @@ export const footer = [
     },
   ];
 
+export const Projects = [
+    {
+        id: "1",
+        title: "Mlay Tours",
+        img: Mlay_Tours_Project,
+        url: "https://mlaytours.onrender.com/",
+        repo: "https://github.com/Final-Project-Group-4/Backend-Project",
+        para: "Mern Stack Project"
+    },
+    {
+        id: "2",
+        title: "Neuromorphic Music Player",
+        img: Neuromorphic_music_player,
+        url: "https://codepen.io/nattydci/pen/LYeYOGY",
+        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
+
+    },
+    {
+        id: "3",
+        title: "Neuromorphic Music Player",
+        img: Neuromorphic_music_player,
+        url: "https://codepen.io/nattydci/pen/LYeYOGY",
+        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
+
+    },
+    {
+        id: "4",
+        title: "Neuromorphic Music Player",
+        img: Neuromorphic_music_player,
+        url: "https://codepen.io/nattydci/pen/LYeYOGY",
+        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
+
+    },
+
+]

@@ -25,7 +25,7 @@ export { default as typescript_logo } from "./typescript_logo.png";
 export { default as hamburguerMenuIcon } from "./hamburguerMenuIcon.svg";
 export { default as closeIcon } from "./closeIcon.svg";
 export { default as Neuromorphic_music_player } from "./Neuromorphic_music_player.png"
-
+export { default as Mlay_Tours_Project } from "./Mlay_Tours_Project.png"
 
 
 

@@ -1,17 +1,18 @@
 import React from 'react';
-import { Neuromorphic_music_player } from "../assets/index"
 
-const ProjectCard = ({ img, title, children, url, repo }) => {
+const ProjectCard = ({ img, title, para, url, repo }) => {
   return (
-    <div className='relative z-10 w-2xl min-h-[40rem] min-w-[40rem] mx-auto shadow-custom bg-gray-700 rounded-lg cursor-pointer transition ease-in duration-400 overflow-hidden'>
+    <div className='relative z-1 w-2xl min-h-[33rem] min-w-[25rem] mx-auto shadow-custom bg-gray-900 rounded-lg cursor-pointer transition ease-in duration-400 overflow-hidden'>
       <div className='bg-gray-900'>
-        <img src={Neuromorphic_music_player} alt="Neuromorphic Music Player" className='w-full object-contain ease-in duration-300 shadow-xl opacity-80 hover:scale-110'/>
+        <a href={url} target="_blank" rel="noreferrer">
+          <img src={img} alt="preview thumbnail of a project" className='w-[100%] object-contain ease-in duration-300 shadow-xl opacity-100 hover:scale-110'/>
+        </a>
       </div>
       <div className='absolute w-full min-h-[20rem] p-6 leading-relaxed bottom-0 left-0 bg-gray-800 cursor-grab text-center'>
         <h3>{title}</h3>
-        <p>{children}
+        <p className='text-white font-bitter font-semiboldte'>{para}
         {repo && (
-          <a className='text-white decoration-0 font-bold' href={repo} target="blank" ref="nonreferer">Link to repository</a>
+          <a className='text-dimBurgundy italic decoration-0 font-bold' href={repo} target="blank" rel="noreferrer">Link to repository</a>
         )}</p>
       </div>
     </div>
