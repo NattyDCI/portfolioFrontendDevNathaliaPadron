@@ -1,30 +1,42 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext, useRef } from "react";
 
 import { navLinks } from "../constants";
 import { moonIcon } from "../assets";
 import { closeIcon } from "../assets";
 import { hamburguerMenuIcon } from "../assets";
+import { MainContext } from "../Context";
+
+
 
 import styles from "../style";
 
 const Navbar = () => {
+  
+  const {
+    heroRef,
+    workRef,
+    aboutRef,
+    contactRef,
+    scrollHandler
+  } = useContext(MainContext);
+
   const [toggle, setToggle] = useState(false);  
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav id="home" className="w-full flex py-6 justify-between items-center navbar">
       <p className="font-qwigley text-[24px] text-white">Nathalia Padron</p>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1 ">
         <li>
           <img src={moonIcon} className="mr-10"></img>
         </li>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-bitter text-[16px] font-regular cursor-pointer text-white ${
-              index === navLinks.length - 1 ? "mr-0" : "mr-10"
-            }`}
+            className={`font-bitter text-[20px] font-semibold cursor-pointer text-white ${
+              index === navLinks.length - 1 ? "mr-0" : "mr-10" 
+            } `}
           >
             <a href={`#${nav.id}`} className="text-white">
               {nav.title}
@@ -60,7 +72,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-bitter text-[16px] font-extrabold cursor-pointer text-white ${
+                className={` cursor-pointer text-white font-bitter text-[16px] font-semibold ${
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 }`}
               >

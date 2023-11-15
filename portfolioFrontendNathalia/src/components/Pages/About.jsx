@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div className={`  flex-col py-64 w-full items-center justify-center `}>
-      <h1 className='text-white text-center text-4xl font-opensans font-bold'>
+      <h1 id="about" className='text-white py-20 text-center text-4xl font-opensans font-bold'>
           ABOUT
       </h1> 
       <div className={`${layout.section} ${styles.flexCenter} `}>

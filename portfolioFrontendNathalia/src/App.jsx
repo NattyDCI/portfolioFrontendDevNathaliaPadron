@@ -10,10 +10,23 @@ import {
   Abilities
 } from "./components";
 
+import { useContext } from "react";
+import { MainContext } from "./Context";
+
 const App = () => {
+
+  const contextValue = useContext(MainContext);
+
+  if (!contextValue) {
+  // Handle the case when the context value is null or undefined
+    return <div>No heroRef available</div>;
+  }
+
+  const { heroRef } = contextValue;
+
   return (
     
-    <div className='bg-primary w-full overflow-hidden'>
+    <div className='bg-primary w-full overflow-hidden wrapper scroll-smooth'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
            < Navbar />

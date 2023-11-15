@@ -5,20 +5,23 @@ import { Abilities, GetInTouch } from "../index";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex flex-col justify-between items-center mb-5`}>
-      <div className={` ${styles.flexCenter} sm:flex-row flex-col ss:px-16 px-4 mt-20`}>
+    <section id="home" className={`w-full flex flex-col justify-between items-center mb-5`}>
+      <div className={` ${styles.flexCenter} sm:flex-row flex-col ss:px-16 px-4 mt-20 w-[85%]`}>
         <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] text-white leading-[45px] w-full">
           Junior  <br/>
         <span className="text-gradient">Frontend Developer</span>
         <p className={`font-bitter font-semibold ss:text-[24px] text-[16px] ss:leading-[40px] leading-[20px] mt-5`}>
           Hey there! <br />
-          I'm Nathalia Padrón. <br className={`md:hidden`} />
+          I'm Nathalia Padrón. <br className={`sm:block hidden `} />
           Based in Stuttgart, Germany.
         </p>
-        < GetInTouch />
+        <div className="md:block hidden">
+          < GetInTouch className="mt-10"/>
+        </div>
+        
         </h1>  
         <div className={`relative xl:ml-5`}>
-          <img src={profile_bewerbung_foto} alt="" className={`w-[250px] h-[100%] relative z-[5] sm:mb-0 mb-10 sm:mt-0 mt-2`} />
+          <img src={profile_bewerbung_foto} alt="" className={`min-w-[250px] h-[100%] relative z-[5] sm:mb-0 mb-10 sm:mt-0 mt-2`} />
           {/* gradient start */}
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
