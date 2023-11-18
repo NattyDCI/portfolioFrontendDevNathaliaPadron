@@ -12,7 +12,7 @@ const ProjectCard = ({ img, title, para, url, repo }) => {
         <h3 className='font-opensans font-semibold text-2xl text-white'>{title}</h3>
         <p className='font-opensans text-white font-regular text-lg'>{para}
         {repo && (
-          <a className='text-dimBurgundy italic decoration-0 font-bold' href={repo} target="blank" rel="noreferrer">Link to repository</a>
+          <a className='text-mainPurple italic decoration-0 font-bold' href={repo} target="blank" rel="noreferrer">Link to repository</a>
         )}</p>
       </div>
     </div>

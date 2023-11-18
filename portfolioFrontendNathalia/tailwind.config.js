@@ -13,13 +13,16 @@ module.exports = {
         '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
         inner: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
         none: 'none',
-        custom: '0 0 0 1rem #1f1f1f52, 0 0 0 2rem #6262620b',
+        /*custom: '0 0 0 1rem #1f1f1f52, 0 0 0 2rem #6262620b',*/
+        custom: '0px -5px 10px 0px rgba(0, 0, 0, 0.5)'
       },
       colors: {
-        primary: "#1A1919" /* este es el color del background en dark mode */,
+        primary: "#1e293b",
+        /*primary: "#1A1919" /* este es el color del background en dark mode */
         secondary: "#62003B" /* accent burgundy */,
         dimWhite: "#FBFBFB" /* este es el fondo de light mode y de las letras cuando esta en dark mode */,
-        dimBurgundy: "#C1AABE",
+        dimPink: "#C1AABE",
+        mainPurple: "#B730D9"
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
