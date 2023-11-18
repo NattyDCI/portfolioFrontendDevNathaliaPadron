@@ -49,7 +49,7 @@ const About = () => {
               </p>
               
             </div>
-            <div className="flex flex-wrap justify-center sm:w-full mt-2 justify-center p-12">
+            <div className="flex flex-wrap sm:w-full mt-2 justify-center p-12">
                 {logos.map((icon, index) =>  
                 
                   <img src={icon.logo} alt={icon.name} key={icon.name} className="w-24 h-[100%] m-2"/> 

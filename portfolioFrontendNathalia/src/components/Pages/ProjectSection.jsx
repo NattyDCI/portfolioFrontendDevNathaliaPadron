@@ -18,7 +18,7 @@ const ProjectSection = () => {
       <div className='relative w-full flex flex-column items-center justify-center z-10 drop-shadow-lg '>
         
           {switchWork ? (
-            <div className="bg-grey-900 w-[full] pt-14 pb-80">
+            <div className="bg-grey-900 w-[full] pt-14 pb-60">
             <div className="w-[100%] max-w-7xl mx-auto relative flex flex-wrap gap-20 pb-16">
           
               {Projects.map((project, index) => {
@@ -30,7 +30,7 @@ const ProjectSection = () => {
               )}
             </div>
             </div>
-          ) : <div className="bg-grey-900 w-[full] pt-14 pb-80 ">
+          ) : <div className="bg-grey-900 w-[full] pt-14 pb-60 ">
           <div className=" w-full max-w-7xl mx-auto relative flex flex-wrap gap-20 pb-16">
         
             {Projects2.map((project, index) => {
