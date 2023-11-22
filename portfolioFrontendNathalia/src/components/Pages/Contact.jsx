@@ -10,6 +10,9 @@ import {
   paperplaneIcon,
 } from "../../assets";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
   const form = useRef();
@@ -27,6 +30,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast("message has been sent!")
+         
         },
         (error) => {
           console.log(error.text);
