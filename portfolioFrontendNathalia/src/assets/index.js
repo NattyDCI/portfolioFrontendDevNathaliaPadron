@@ -28,7 +28,7 @@ export { default as Neuromorphic_music_player } from "./Neuromorphic_music_playe
 export { default as Mlay_Tours_Project } from "./Mlay_Tours_Project.png"
 export { default as eCommerce_Thumbnail } from "./eCommerce_Thumbnail.png"
 export { default as Animation_puppy } from "./Animation_puppy.png"
-
+export { default as Find_Pokemon_Fetching } from "./Find_Pokemon_Fetching.png"
 
 
 
