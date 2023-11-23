@@ -26,8 +26,8 @@ export { default as hamburguerMenuIcon } from "./hamburguerMenuIcon.svg";
 export { default as closeIcon } from "./closeIcon.svg";
 export { default as Neuromorphic_music_player } from "./Neuromorphic_music_player.png"
 export { default as Mlay_Tours_Project } from "./Mlay_Tours_Project.png"
-
-
+export { default as eCommerce_Thumbnail } from "./eCommerce_Thumbnail.png"
+export { default as Animation_puppy } from "./Animation_puppy.png"
 
 
 

@@ -27,7 +27,7 @@ const ProjectSection = () => {
           
               {Projects.map((project, index) => {
                 return (
-                  < ProjectCard title={project.title} img={project.img} url={project.url} repo={project.repo} para={project.para}>
+                  < ProjectCard title={project.title} img={project.img} url={project.url} repo={project.repo} codepen={project.codepen} para={project.para}>
                   </ProjectCard>
                   )
                 }

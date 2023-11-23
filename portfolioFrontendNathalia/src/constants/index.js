@@ -1,5 +1,5 @@
 import React from "react";
-import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo,  personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop, hamburguerMenuIcon, closeIcon, Mlay_Tours_Project, Neuromorphic_music_player } from "../assets";
+import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo,  personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop, hamburguerMenuIcon, closeIcon, Mlay_Tours_Project, Neuromorphic_music_player, eCommerce_Thumbnail, Animation_puppy } from "../assets";
 
 
 
@@ -271,50 +271,50 @@ export const Projects = [
         img: Mlay_Tours_Project,
         url: "https://mlaytours.onrender.com/",
         repo: "https://github.com/Final-Project-Group-4/Backend-Project",
-        para: "Mern Stack Project "
+        para: "Mern Stack Project for real life client. The company offers trips in the Region of Tanzania, Afrika. The Project includes: Server Side Programming and language translation support. Wireframes were created in Figma. "
     },
     {
         id: "2",
         title: "Neuromorphic Music Player",
         img: Neuromorphic_music_player,
         url: "https://codepen.io/nattydci/pen/LYeYOGY",
-        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
-
+        para: "Small Project showing CSS skills and the use of Neuroformic elements, Click to find a link to my codepen. "
     },
     {
-        id: "3",
-        title: "Neuromorphic Music Player",
-        img: Neuromorphic_music_player,
-        url: "https://codepen.io/nattydci/pen/LYeYOGY",
-        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
-
+        id:"3",
+        title: 'E-commerce "All things Interior"',
+        img: eCommerce_Thumbnail,
+        url: "https://all-things-interior.netlify.app/",
+        repo: "https://github.com/NattyDCI/e-commerce-react-app",
+        para: "In this project I experiemented with CSS utility framework SASS and various component libraries for elements such as the Carousel and contact form validation. Experimented with operations in React using Context for state management. Furthermore worked on the styling and overall look of the website. " 
     },
     {
         id: "4",
-        title: "Neuromorphic Music Player",
-        img: Neuromorphic_music_player,
-        url: "https://codepen.io/nattydci/pen/LYeYOGY",
-        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
+        title: "Text Animation with CSS",
+        img: Animation_puppy,
+        url: "https://codepen.io/nattydci/pen/OJzRbLR",
+        para: "Animation done with CSS, click to find a link to my codepen. "
 
-    },
-
+    }
+    
 ]
 
 export const Projects2 = [
     {
         id: "1",
-        title: "Poopie Tours",
+        title: "POOPIE Tours",
         img: Mlay_Tours_Project,
         url: "https://mlaytours.onrender.com/",
         repo: "https://github.com/Final-Project-Group-4/Backend-Project",
-        para: "Mern Stack Project "
+        para: "Mern Stack Project"
     },
     {
         id: "2",
         title: "Neuromorphic Music Player",
         img: Neuromorphic_music_player,
         url: "https://codepen.io/nattydci/pen/LYeYOGY",
-        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
+        repo: "https://github.com/Final-Project-Group-4/Backend-Project",
+        para: "Small project showing CSS skills and the use of Neuroformic elements, Click to find a link to my codepen"
 
     },
     {
