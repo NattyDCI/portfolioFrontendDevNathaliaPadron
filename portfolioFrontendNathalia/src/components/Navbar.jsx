@@ -37,7 +37,7 @@ const Navbar = () => {
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme}>
-        <Moon />
+        <Moon addedStyles={"dark:fill-green-200"}/>
         </li>
         {navLinks.map((nav, index) => (
           <li
