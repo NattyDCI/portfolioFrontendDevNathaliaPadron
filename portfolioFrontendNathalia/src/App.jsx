@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     
-    <div className='bg-primary w-full overflow-hidden wrapper scroll-smooth'>
+    <div className='dark:bg-primary bg-white w-full overflow-hidden wrapper scroll-smooth'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
            < Navbar />

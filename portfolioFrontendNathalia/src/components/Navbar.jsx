@@ -6,10 +6,12 @@ import { moonIcon } from "../assets";
 import { closeIcon } from "../assets";
 import { hamburguerMenuIcon } from "../assets";
 import { MainContext } from "../Context";
+import { Moon } from "../assets";
 
 
 
 import styles from "../style";
+import { useEffect } from "react";
 
 const Navbar = () => {
   
@@ -22,30 +24,29 @@ const Navbar = () => {
   } = useContext(MainContext);
 
   const [toggle, setToggle] = useState(false);  
-  
+   
   function toggleTheme() {
     document.documentElement.classList.toggle("dark")
 
   }
 
- 
 
   return (
-    <nav id="home" className="w-full flex py-6 justify-between items-center navbar">
-      <p className="font-qwigley text-[24px] text-white">Nathalia Padron</p>
+    <nav id="home" className="w-full flex py-6 justify-between items-center navbar dark:bg-primary bg-white">
+      <p className="font-qwigley text-[24px] dark:text-white text-primary">Nathalia Padron</p>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1 ">
-        <li>
-          <img onClick={toggleTheme} src={moonIcon} className="mr-10"></img>
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+        <li onClick={toggleTheme}>
+        <Moon />
         </li>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-bitter text-[20px] font-semibold cursor-pointer text-white ${
+            className={`font-bitter text-[20px] font-semibold cursor-pointer ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10" 
             } `}
           >
-            <a href={`#${nav.id}`} className="text-white">
+            <a href={`#${nav.id}`} className="dark:text-white text-primary">
               {nav.title}
             </a>
           </li>
@@ -74,7 +75,8 @@ const Navbar = () => {
           flex-1 flex-col"
           >
             <li>
-              <img onClick={toggleTheme} src={moonIcon} className="mb-4"></img>
+              <img onClick={toggleTheme} src={moonIcon}/>
+              
             </li>
             {navLinks.map((nav, index) => (
               <li

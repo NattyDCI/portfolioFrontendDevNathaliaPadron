@@ -31,6 +31,6 @@ export { default as Animation_puppy } from "./Animation_puppy.png";
 export { default as Find_Pokemon_Fetching } from "./Find_Pokemon_Fetching.png";
 export { default as Bootstrap_styling_website_example } from "./Bootstrap_styling_website_example.png";
 export { default as ticTacToeThumbnail } from "./ticTacToeThumbnail.png"
-
+export { default as Moon } from "./Moon.jsx"
 
 
