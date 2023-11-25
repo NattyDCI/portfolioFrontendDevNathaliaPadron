@@ -22,6 +22,13 @@ const Navbar = () => {
   } = useContext(MainContext);
 
   const [toggle, setToggle] = useState(false);  
+  
+  function toggleTheme() {
+    document.documentElement.classList.toggle("dark")
+
+  }
+
+ 
 
   return (
     <nav id="home" className="w-full flex py-6 justify-between items-center navbar">
@@ -29,7 +36,7 @@ const Navbar = () => {
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 ">
         <li>
-          <img src={moonIcon} className="mr-10"></img>
+          <img onClick={toggleTheme} src={moonIcon} className="mr-10"></img>
         </li>
         {navLinks.map((nav, index) => (
           <li
@@ -67,7 +74,7 @@ const Navbar = () => {
           flex-1 flex-col"
           >
             <li>
-              <img src={moonIcon} className="mb-4"></img>
+              <img onClick={toggleTheme} src={moonIcon} className="mb-4"></img>
             </li>
             {navLinks.map((nav, index) => (
               <li
