@@ -19,6 +19,8 @@ module.exports = {
       },
       colors: {
         primary: "#1e293b",
+        offWhite:"#FBF9F9",
+        offDark:"#333333",
         /*primary: "#1A1919" /* este es el color del background en dark mode */
         secondary: "#62003B" /* accent burgundy */,
         dimWhite: "#FBFBFB" /* este es el fondo de light mode y de las letras cuando esta en dark mode */,

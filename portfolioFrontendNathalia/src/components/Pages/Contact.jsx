@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import styles, { layout } from "../../style";
 import {
   messageIcon,
@@ -14,9 +14,11 @@ import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import StyledButton from "../StyledButton";
 import { navLinks } from "../../constants";
+import { MainContext } from "../../Context";
 
 
 const Contact = () => {
+  const { contactRef } = useContext(MainContext)
   const form = useRef();
   const buttonText = "Send";
 
@@ -48,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`flex-col pt-20 w-full items-center justify-center `}>
+    <div ref={contactRef} className={`flex-col pt-20 w-full items-center justify-center `}>
       <div id="contact" className="pt-5">
         <h1 className="text-white border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold">
           CONTACT

@@ -10,7 +10,7 @@ export function ContextProvider({ children }) {
     const aboutRef = useRef(null);
     const contactRef = useRef(null);
     
-    let options = { behaviour: "smooth", block:"center" };
+    let options = { behavior: "smooth", block:"center" };
 
     const heroScrollHandler = (currentRef) => {
         if (currentRef.current.className === "wrapper")

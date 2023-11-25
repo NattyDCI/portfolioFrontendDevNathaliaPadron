@@ -26,14 +26,18 @@ const App = () => {
 
   return (
     
-    <div className='dark:bg-primary bg-white w-full overflow-hidden wrapper scroll-smooth'>
+    <div ref={heroRef} className='wrapper dark:bg-primary bg-white w-full overflow-hidden wrapper scroll-smooth'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
            < Navbar />
+            
         </div>
       </div>
-      
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className='md:block hidden'>
+        <hr class="flex-grow border-t dark:border-gray-300 border-black z-1"></hr>
+      </div>
+
+      <div className={`dark:bg-primary bg-offWhite ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
           

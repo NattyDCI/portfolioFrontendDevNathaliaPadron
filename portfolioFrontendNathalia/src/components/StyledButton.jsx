@@ -1,22 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from "../style"
+import { MainContext } from '../Context';
 
-const StyledButton = ({parragraf, icon,link, width}) => {
+const StyledButton = ({parragraf, icon, link, width, reference}) => {
+
+const { heroScrollHandler } = useContext(MainContext); 
 
   return (
     <>
           {icon ? 
-            <button className={`${styles.flexCenter} hover:ring hover:ring-offset-4 hover:ring-violet-600 px-4 w-${width} h-[60px] border-2 rounded-md mt-6 cursor-pointer`}>
+            <button onClick={() => heroScrollHandler(reference)} className={`${styles.flexCenter} hover:ring hover:ring-offset-4 hover:ring-fuchsia-600 px-4 w-${width} h-[60px] border-2 rounded-md mt-6 cursor-pointer`}>
               <img src={icon} className='w-[20px] h-[20px] mr-[20px]' alt="icon" /> 
-              <a href={link} className=" font-bitter font-medium text-[18px] leading-[23.4px] text-white">
-                  {parragraf}
-              </a>        
+              {parragraf}     
             </button>
             : 
-            <button className={`${styles.flexCenter} hover:ring hover:ring-offset-4 hover:ring-violet-600 px-4 w-${width} hover:bg-purple-300 h-[60px] border-2 rounded-md mt-6 cursor-pointer`}>
-              <a href={link} className="font-bitter font-medium text-[18px] leading-[23.4px] text-white">
-                  {parragraf}
-              </a>
+            <button onClick={() => heroScrollHandler(reference)} className={`${styles.flexCenter} hover:ring-4 hover:ring-offset-4 hover:ring-fuchsia-600 px-4 w-${width} bg-mainPurple hover:bg-purple-300 h-[60px] border-2 rounded-md mt-6 cursor-pointer`}>
+                {parragraf}
             </button>
           } 
     

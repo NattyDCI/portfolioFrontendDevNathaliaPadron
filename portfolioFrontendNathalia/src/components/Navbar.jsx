@@ -37,7 +37,7 @@ const Navbar = () => {
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme}>
-        <Moon addedStyles={"dark:fill-green-200"}/>
+        <Moon addedStyles={"dark:fill-white"}/>
         </li>
         {navLinks.map((nav, index) => (
           <li
@@ -51,6 +51,7 @@ const Navbar = () => {
             </a>
           </li>
         ))}
+
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -93,6 +94,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+
     </nav> /* html semantic nav tag*/
   );
 };
