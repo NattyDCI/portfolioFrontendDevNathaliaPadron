@@ -10,16 +10,18 @@ const Hero = () => {
   const buttonText = "Get in Touch!"
   return (
     <section id="home" ref={heroRef} className={`w-full flex flex-col justify-between items-center mb-5`}>
-      <div className={` ${styles.flexCenter} dark:bg-primary bg-offWhite sm:flex-row flex-col ss:px-16 px-4 mt-20 w-[85%]`}>
+      <div className={` ${styles.flexCenter} dark:bg-primary bg-white sm:flex-row flex-col ss:px-16 px-4 mt-20 w-[85%]`}>
       <div className="w-full">
         <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] dark:text-white text-offDark leading-[50px] w-full">
           Junior  <br/>
         <span className="text-gradient">Frontend Developer</span>
-        <p className={`font-bitter dark:text-white text-offDark ss:text-[20px] text-[12px] ss:leading-[26px] leading-[20px] mt-5`}>
-          Hey there! <br />
-          I'm Nathalia Padrón. <br className={`sm:block hidden `} />
-          Based in Stuttgart, Germany.
-        </p>
+        <div className={` dark:text-white text-offDark ss:text-[20px] text-[12px] ss:leading-[26px] leading-[20px] mt-5`}>
+          <p className="font-opensans font-semibold">
+            Hey there!<br className={`sm:block hidden `} /> I'm Nathalia Padrón.
+          </p> 
+          <p className="font-opensans font-light ss:text-[18px] text-[12px]"> 
+          Based in Stuttgart, Germany.</p>
+        </div>
         
         </h1> 
         

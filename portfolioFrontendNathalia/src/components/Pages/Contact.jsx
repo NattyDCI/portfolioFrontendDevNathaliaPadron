@@ -1,9 +1,9 @@
 import React, { useRef, useContext } from "react";
 import styles, { layout } from "../../style";
 import {
-  messageIcon,
-  envelopeIcon,
-  personIcon,
+  MessageIcon,
+  EnvelopeIcon,
+  PersonIcon,
   behanceLogo,
   linkedInLogo,
   githubLogo,
@@ -15,6 +15,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import StyledButton from "../StyledButton";
 import { navLinks } from "../../constants";
 import { MainContext } from "../../Context";
+
 
 
 const Contact = () => {
@@ -81,13 +82,9 @@ const Contact = () => {
               <form ref={form} onSubmit={sendEmail}>
                 <div>
                   <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4">
-                    <div className="flex items-baseline">
-                      <img
-                        className="w-[25px] mr-2"
-                        src={personIcon}
-                        alt="Person icon"
-                      />
-                      <p className="dark-text-white text-offDark">Name</p>
+                    <div className="flex items-end">
+                      <PersonIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark"/>
+                      <p className="dark:text-white text-offDark">Name</p>
                     </div>
                   </label>
                   <input
@@ -100,12 +97,8 @@ const Contact = () => {
                 <div>
                   <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4">
                     <div className="flex items-end">
-                      <img
-                        className="w-[34px] mr-2 items-start"
-                        src={envelopeIcon}
-                        alt="envelope icon"
-                      />
-                      <p className="dark-text-white text-offDark">E-mail</p>
+                      <EnvelopeIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark"/>
+                      <p className="dark:text-white text-offDark">E-mail</p>
                     </div>
                   </label>
                   <input
@@ -118,12 +111,8 @@ const Contact = () => {
                 <div>
                   <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4 ">
                     <div className="flex items-end">
-                      <img
-                        className="w-[30px] mr-2"
-                        src={messageIcon}
-                        alt="message icon"
-                      />
-                      <p className="dark-text-white text-offDark">Message</p>
+                      <MessageIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark"/>
+                      <p className="dark:text-white text-offDark">Message</p>
                     </div>
                   </label>
                   <textarea

@@ -32,6 +32,9 @@ export { default as Find_Pokemon_Fetching } from "./Find_Pokemon_Fetching.png";
 export { default as Bootstrap_styling_website_example } from "./Bootstrap_styling_website_example.png";
 export { default as ticTacToeThumbnail } from "./ticTacToeThumbnail.png";
 export { default as Moon } from "./Moon.jsx";
-export { default as Multiculti } from "./Multiculti.jsx"
-export { default as Agile } from "./Agile.jsx"
-export { default as DesignMinded } from "./DesignMinded.jsx"
+export { default as Multiculti } from "./Multiculti.jsx";
+export { default as Agile } from "./Agile.jsx";
+export { default as DesignMinded } from "./DesignMinded.jsx";
+export { default as PersonIcon} from "./PersonIcon.jsx";
+export { default as EnvelopeIcon } from "./EnvelopeIcon.jsx";
+export { default as MessageIcon } from "./MessageIcon.jsx"
