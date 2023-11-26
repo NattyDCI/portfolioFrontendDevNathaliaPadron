@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Skills from '../Skills';
 import { about, logos } from "../../constants"
-import styles, { layout } from '../../style';
+import styles, { layout } from '../../style'; 
+import { MainContext } from "../../Context";
+
 
 
 const About = () => {
 
+  const { aboutRef } = useContext(MainContext)
+
   return (
-    <div className={`  flex-col py-64 w-full items-center justify-center `}>
+    <div ref={aboutRef} className={`  flex-col py-64 w-full items-center justify-center `}>
       <div id="about" className='pt-40'>
         <h1  className='text-white border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
             ABOUT

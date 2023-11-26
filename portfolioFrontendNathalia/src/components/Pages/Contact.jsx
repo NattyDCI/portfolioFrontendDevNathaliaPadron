@@ -50,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <div ref={contactRef} className={`flex-col pt-20 w-full items-center justify-center `}>
+    <div ref={contactRef} className={`flex-col pt-25 w-full items-center justify-center `}>
       <div id="contact" className="pt-5">
         <h1 className="text-white border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold">
           CONTACT
@@ -134,7 +134,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="flex justify-center items-center">
-                  < StyledButton parragraf={buttonText} width={`fit`} icon={paperplaneIcon} link={`#${navLinks[3].id}`} className="mt-10"/>
+                  < StyledButton parragraf={buttonText} width={`fit`} icon={paperplaneIcon} className="mt-10"/>
                 </div>
               </form>
             </div>

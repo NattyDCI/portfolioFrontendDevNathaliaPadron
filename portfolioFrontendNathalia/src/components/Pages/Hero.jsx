@@ -6,11 +6,12 @@ import { navLinks } from "../../constants";
 import { MainContext } from "../../Context";
 
 const Hero = () => {
-  const { contactRef } = useContext(MainContext);
+  const { contactRef, heroRef } = useContext(MainContext);
   const buttonText = "Get in Touch!"
   return (
-    <section id="home" className={`w-full flex flex-col justify-between items-center mb-5`}>
+    <section id="home" ref={heroRef} className={`w-full flex flex-col justify-between items-center mb-5`}>
       <div className={` ${styles.flexCenter} sm:flex-row flex-col ss:px-16 px-4 mt-20 w-[85%]`}>
+      <div className="w-full">
         <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] dark:text-white text-offDark leading-[50px] w-full">
           Junior  <br/>
         <span className="text-gradient">Frontend Developer</span>
@@ -19,10 +20,15 @@ const Hero = () => {
           I'm Nathalia Padrón. <br className={`sm:block hidden `} />
           Based in Stuttgart, Germany.
         </p>
+        
+        </h1> 
+        
         <div className="md:block hidden">
-          < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} link={`#${navLinks[3].id}`} className="mt-10"/>
-        </div>  
-        </h1>  
+          < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
+        </div>
+        </div>
+          
+         
         <div className={`relative xl:ml-5`}>
           <img src={profile_bewerbung_foto} alt="" className={`min-w-[250px] h-[100%] relative z-[5] sm:mb-0 mb-10 sm:mt-0 mt-2`} />
           {/* gradient start */}

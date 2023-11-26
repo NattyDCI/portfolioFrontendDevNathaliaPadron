@@ -7,11 +7,8 @@ import { closeIcon } from "../assets";
 import { hamburguerMenuIcon } from "../assets";
 import { MainContext } from "../Context";
 import { Moon } from "../assets";
-
-
-
+import StyledButton from "./StyledButton";
 import styles from "../style";
-import { useEffect } from "react";
 
 const Navbar = () => {
   
@@ -24,15 +21,30 @@ const Navbar = () => {
   } = useContext(MainContext);
 
   const [toggle, setToggle] = useState(false);  
+  const [ linktoRef, setRef ] = useState(null);
    
   function toggleTheme() {
     document.documentElement.classList.toggle("dark")
 
   }
-
+  function referenceGenerator (navId){
+    
+      if (navId === "home") {
+        return heroRef
+      } else if (navId === "contact"){
+        return contactRef
+      } else if (navId === "about"){
+        return aboutRef
+      } else if (navId === "work") {
+        return workRef
+      }
+      return null
+    
+    
+  }
 
   return (
-    <nav id="home" className="w-full flex py-6 justify-between items-center navbar dark:bg-primary bg-white">
+    <nav id="home" className="w-full flex py-3 justify-between items-center navbar dark:bg-primary bg-white">
       <p className="font-qwigley text-[24px] dark:text-white text-primary">Nathalia Padron</p>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -46,9 +58,7 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-0" : "mr-10" 
             } `}
           >
-            <a href={`#${nav.id}`} className="dark:text-white text-primary">
-              {nav.title}
-            </a>
+            < StyledButton reference={referenceGenerator(nav.id)} parragraf={nav.title} width={`fit`} className="mt-10 font-[30px]"/>
           </li>
         ))}
 

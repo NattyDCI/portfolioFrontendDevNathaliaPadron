@@ -11,7 +11,7 @@ const ProjectSection = () => {
 
   console.log(Projects[0].title,"try this")
   return (
-    <div  className={`flex-col py-64 w-full items-center justify-center `}>
+    <div ref={workRef} className={`flex-col py-64 w-full items-center justify-center `}>
       <div id="work" className='pt-5'>
         <h1 className=' text-white text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold py-2'>
           WORK
