@@ -37,15 +37,15 @@ const App = () => {
         <hr class="flex-grow border-t dark:border-gray-300 border-black z-1"></hr>
       </div>
 
-      <div className={`dark:bg-primary bg-offWhite ${styles.flexStart}`}>
+      <div className={`${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
           
         </div>
       </div>
       
-      
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      :
+      <div className={`dark:bg-primary bg-white ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           < About />
           < ProjectSection />

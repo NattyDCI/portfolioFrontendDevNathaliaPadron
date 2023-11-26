@@ -11,9 +11,9 @@ const About = () => {
   const { aboutRef } = useContext(MainContext)
 
   return (
-    <div ref={aboutRef} className={`  flex-col py-64 w-full items-center justify-center `}>
+    <div ref={aboutRef} className={`flex-col py-64 w-full items-center justify-center `}>
       <div id="about" className='pt-40'>
-        <h1  className='text-white border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
+        <h1  className='dark:text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
             ABOUT
         </h1> 
       </div>
@@ -21,13 +21,13 @@ const About = () => {
   
           <div className={`flex w-full flex-col items-center`}>
             <div className='flex flex-grow flex-shrink flex-col w-[80%] '>
-              <p className='text-white '>
+              <p className=' dark:text-white text-offDark'>
                 {about[1].content} 
                 <span className={`italic font-bold`}> {about[2].content}</span>
                 {about[3].content}
               </p>
               <br />
-              <p className='text-white'>
+              <p className='dark:text-white text-offDark'>
                 {about[4].content}
                 <span className={`italic font-bold`}> {about[5].content}</span>
                 {about[6].content}
@@ -37,7 +37,7 @@ const About = () => {
                 {about[11].content}
               </p>
               <br />
-              <p className='text-white'>
+              <p className='dark:text-white text-offDark'>
                 {about[12].content}
                 <span className={`italic font-bold`}> {about[13].content}</span>
                 {about[14].content}
@@ -49,7 +49,7 @@ const About = () => {
                 {about[20].content}
               </p>
               <br />
-              <p className='text-white'>
+              <p className='dark:text-white text-offDark'>
               {about[21].content}
               <span className={`italic font-bold`}>{about[22].content}</span>
               </p>

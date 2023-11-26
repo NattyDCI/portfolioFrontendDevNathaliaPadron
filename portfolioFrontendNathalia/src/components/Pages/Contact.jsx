@@ -52,7 +52,7 @@ const Contact = () => {
   return (
     <div ref={contactRef} className={`flex-col pt-25 w-full items-center justify-center `}>
       <div id="contact" className="pt-5">
-        <h1 className="text-white border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold">
+        <h1 className="dark-text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold">
           CONTACT
         </h1>
       </div>
@@ -60,7 +60,7 @@ const Contact = () => {
         className={`${layout.section} ${styles.flexCenter} flex-col py-20 w-full items-center justify-center`}
       >
         <div className={`flex flex-col w-[70%] `}>
-          <p className="font-opensans text-white text-2lg">
+          <p className="font-opensans dark-text-white text-offDark text-2lg">
             If you are{" "}
             <span className="font-opensans font-bold italic text-2lg">
               passionate
@@ -69,7 +69,7 @@ const Contact = () => {
             use this form.{" "}
           </p>
           <br />
-          <p className="font-opensans text-white text-2lg">
+          <p className="font-opensans dark-text-white text-offDark text-2lg">
             Write me a request or question! I'm interested in working on
             <span className="font-opensans font-bold italic text-2lg">
               large and creative projects.
@@ -80,14 +80,14 @@ const Contact = () => {
             <div className="space-y-12">
               <form ref={form} onSubmit={sendEmail}>
                 <div>
-                  <label className="font-bitter text-white block text-lg font-bold my-4">
+                  <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4">
                     <div className="flex items-baseline">
                       <img
                         className="w-[25px] mr-2"
                         src={personIcon}
                         alt="Person icon"
                       />
-                      <p>Name</p>
+                      <p className="dark-text-white text-offDark">Name</p>
                     </div>
                   </label>
                   <input
@@ -98,14 +98,14 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="font-bitter text-white block text-lg font-bold my-4">
+                  <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4">
                     <div className="flex items-end">
                       <img
                         className="w-[34px] mr-2 items-start"
                         src={envelopeIcon}
                         alt="envelope icon"
                       />
-                      <p>E-mail</p>
+                      <p className="dark-text-white text-offDark">E-mail</p>
                     </div>
                   </label>
                   <input
@@ -116,14 +116,14 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="font-bitter text-white block text-lg font-bold my-4 ">
+                  <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4 ">
                     <div className="flex items-end">
                       <img
                         className="w-[30px] mr-2"
                         src={messageIcon}
                         alt="message icon"
                       />
-                      <p>Message</p>
+                      <p className="dark-text-white text-offDark">Message</p>
                     </div>
                   </label>
                   <textarea
@@ -140,14 +140,14 @@ const Contact = () => {
             </div>
 
             <div className="mt-12">
-              <p className="font-opensans font-semibold text-lg text-white mr-2">
+              <p className="font-opensans font-semibold text-lg dark:text-white text-offDark mr-2">
                 Telefonummer:
                 <span className="font-opensans text-lg font-medium">
                   (+49)174 3515 044
                 </span>
               </p>
               <div className="flex items-end">
-                <p className="font-opensans font-semibold text-lg text-white mr-2">
+                <p className="font-opensans font-semibold text-lg dark:text-white text-offDark mr-2">
                   Email:
                 </p>
                 <a

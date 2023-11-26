@@ -9,11 +9,10 @@ const ProjectSection = () => {
   const { workRef } = useContext(MainContext);
   const [switchWork, setSwitchWork] = useState(true);
 
-  console.log(Projects[0].title,"try this")
   return (
     <div ref={workRef} className={`flex-col py-64 w-full items-center justify-center `}>
       <div id="work" className='pt-5'>
-        <h1 className=' text-white text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold py-2'>
+        <h1 className='dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold py-2'>
           WORK
         </h1>
       </div>
@@ -47,13 +46,13 @@ const ProjectSection = () => {
           </div>
           </div>
           }
-          <div className="w-[95%] max-w-[125rem] text-5xl flex justify-between absolute top-[39%] translate-x[-50%] z-10 cursor-pointer">
+          <div className="w-[95%] max-w-[125rem] text-5xl flex justify-between absolute top-[41%] translate-x[-50%] z-10 cursor-pointer">
           <AiOutlineLeft
-            className="arrow text-white text-[30px]"
+            className="arrow dark:text-white text-offDark text-[34px]"
             onClick={() => setSwitchWork(!switchWork)}
           />
           <AiOutlineRight
-            className="arrow text-white text-[30px]"
+            className="arrow dark:text-white text-offDark text-[34px]"
             onClick={() => setSwitchWork(!switchWork)}
           />
         </div>

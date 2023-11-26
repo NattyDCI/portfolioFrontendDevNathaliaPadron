@@ -30,7 +30,7 @@ export const features = [
     {
         id: "feature-2",
         icon: "designMinded",
-        title: "designMinded",
+        title: "Design-minded",
         content: "The driving aspect for my designs has a start in the consideration of human interaction. I also love to learn about new UX/UI trends", 
     },
     {
