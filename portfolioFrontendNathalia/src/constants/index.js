@@ -23,19 +23,19 @@ export const navLinks = [
 export const features = [
     {
         id: "feature-1",
-        icon: agile,
+        icon: "agile",
         title: "Agile",
         content: "I am familiar working with Agile framework, involved in the planning and improving the digital interface with each iteration", 
     },
     {
         id: "feature-2",
-        icon: design_minded_icon,
-        title: "Design-minded",
+        icon: "designMinded",
+        title: "designMinded",
         content: "The driving aspect for my designs has a start in the consideration of human interaction. I also love to learn about new UX/UI trends", 
     },
     {
         id: "feature-3",
-        icon: multiculturalIcon,
+        icon: "multicultural",
         title: "Multicultural",
         content: "I consider myself as an adaptable and open individual, I speak fluent english and german", 
     },

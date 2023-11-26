@@ -56,7 +56,7 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-0" : "mr-10" 
             } `}
           >
-            <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 px-4 w-full h-[60px]cursor-pointer focus:ring focus:ring-purple-300`}> 
+            <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 px-4 w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
               {nav.title}     
             </button>
           </li>
