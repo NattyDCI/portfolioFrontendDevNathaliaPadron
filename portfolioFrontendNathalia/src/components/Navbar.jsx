@@ -10,6 +10,7 @@ import { Moon } from "../assets";
 import StyledButton from "./StyledButton";
 import styles from "../style";
 
+
 const Navbar = () => {
   
   const {
@@ -17,7 +18,7 @@ const Navbar = () => {
     workRef,
     aboutRef,
     contactRef,
-    scrollHandler
+    heroScrollHandler
   } = useContext(MainContext);
 
   const [toggle, setToggle] = useState(false);  
@@ -28,7 +29,6 @@ const Navbar = () => {
 
   }
   function referenceGenerator (navId){
-    
       if (navId === "home") {
         return heroRef
       } else if (navId === "contact"){
@@ -39,8 +39,6 @@ const Navbar = () => {
         return workRef
       }
       return null
-    
-    
   }
 
   return (
@@ -58,7 +56,9 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-0" : "mr-10" 
             } `}
           >
-            < StyledButton reference={referenceGenerator(nav.id)} parragraf={nav.title} width={`fit`} className="mt-10 font-[30px]"/>
+            <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 px-4 w-full h-[60px]cursor-pointer focus:ring focus:ring-purple-300`}> 
+              {nav.title}     
+            </button>
           </li>
         ))}
 
