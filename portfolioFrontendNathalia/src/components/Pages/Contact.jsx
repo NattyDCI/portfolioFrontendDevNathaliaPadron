@@ -11,15 +11,13 @@ import {
 } from "../../assets";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import StyledButton from "../StyledButton";
 import { navLinks } from "../../constants";
 import { MainContext } from "../../Context";
 
-
-
 const Contact = () => {
-  const { contactRef } = useContext(MainContext)
+  const { contactRef } = useContext(MainContext);
   const form = useRef();
   const buttonText = "Send";
 
@@ -37,31 +35,31 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           toast("message has been sent!", {
-            progress:undefined,
+            progress: undefined,
             autoClose: 5000,
-            
-
-          });   
+          });
         },
         (error) => {
           console.log(error.text);
         }
       );
-      
   };
 
   return (
-    <div ref={contactRef} className={`flex-col pt-25 w-full items-center justify-center `}>
-      <div id="contact" className="pt-5">
-        <h1 className="dark-text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold">
-          CONTACT
-        </h1>
+    <div
+      ref={contactRef}
+      className={`flex-col w-full items-center justify-center pt-[20rem]`}
+    >
+      <div id="contact" className=" pt-5">
+        <div className="dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold">
+          <p>CONTACT</p>
+        </div>
       </div>
       <div
         className={`${layout.section} ${styles.flexCenter} flex-col py-20 w-full items-center justify-center`}
       >
         <div className={`flex flex-col w-[70%] `}>
-          <p className="font-opensans dark-text-white text-offDark text-2lg">
+          <p className="font-opensans dark:text-white text-offDark text-2lg">
             If you are{" "}
             <span className="font-opensans font-bold italic text-2lg">
               passionate
@@ -70,7 +68,7 @@ const Contact = () => {
             use this form.{" "}
           </p>
           <br />
-          <p className="font-opensans dark-text-white text-offDark text-2lg">
+          <p className="font-opensans dark:text-white text-offDark text-2lg">
             Write me a request or question! I'm interested in working on
             <span className="font-opensans font-bold italic text-2lg">
               large and creative projects.
@@ -83,7 +81,7 @@ const Contact = () => {
                 <div>
                   <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4">
                     <div className="flex items-end">
-                      <PersonIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark"/>
+                      <PersonIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark" />
                       <p className="dark:text-white text-offDark">Name</p>
                     </div>
                   </label>
@@ -97,7 +95,7 @@ const Contact = () => {
                 <div>
                   <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4">
                     <div className="flex items-end">
-                      <EnvelopeIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark"/>
+                      <EnvelopeIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark" />
                       <p className="dark:text-white text-offDark">E-mail</p>
                     </div>
                   </label>
@@ -111,7 +109,7 @@ const Contact = () => {
                 <div>
                   <label className="font-bitter dark-text-white text-offDark block text-lg font-bold my-4 ">
                     <div className="flex items-end">
-                      <MessageIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark"/>
+                      <MessageIcon addedStyles="mr-4 dark:fill-offWhite fill-offDark" />
                       <p className="dark:text-white text-offDark">Message</p>
                     </div>
                   </label>
@@ -123,7 +121,12 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="flex justify-center items-center">
-                  < StyledButton parragraf={buttonText} width={`fit`} icon={paperplaneIcon} className="mt-10"/>
+                  <StyledButton
+                    parragraf={buttonText}
+                    width={`fit`}
+                    icon={paperplaneIcon}
+                    className="mt-10"
+                  />
                 </div>
               </form>
             </div>

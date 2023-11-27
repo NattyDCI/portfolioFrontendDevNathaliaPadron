@@ -37,4 +37,7 @@ export { default as Agile } from "./Agile.jsx";
 export { default as DesignMinded } from "./DesignMinded.jsx";
 export { default as PersonIcon} from "./PersonIcon.jsx";
 export { default as EnvelopeIcon } from "./EnvelopeIcon.jsx";
-export { default as MessageIcon } from "./MessageIcon.jsx"
+export { default as MessageIcon } from "./MessageIcon.jsx";
+export { default as Behance } from "./Behance.jsx";
+export { default as Linkedin } from "./Linkedin.jsx";
+export { default as Github } from "./Github.jsx"

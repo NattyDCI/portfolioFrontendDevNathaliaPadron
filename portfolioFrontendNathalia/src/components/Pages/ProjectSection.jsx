@@ -10,10 +10,13 @@ const ProjectSection = () => {
   const [switchWork, setSwitchWork] = useState(true);
 
   return (
-    <div ref={workRef} className={`flex-col mb-8 w-full items-center justify-center pt-[40rem]`}>
-        <p className='dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold'>
-          WORK
-        </p>
+    <div ref={workRef} className={`flex-col w-["100%"] items-center justify-center  md:pt-[20rem] lg:pt-[40rem] pt-[48rem]`}>
+      
+        <div id="work" className=' pt-5'>
+          <div className='dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold' >
+            <p>WORK</p>
+          </div>
+        </div>
         <div className='relative flex flex-column items-center justify-center content-center z-10 drop-shadow-lg '>
         
           {switchWork ? (

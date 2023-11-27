@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ img, title, para, url, repo, codepen }) => {
   return (
-    <div className='relative z-1 w-2xl min-h-[28rem] min-w-[28rem] mx-auto shadow-custom bg-gray-900 rounded-lg cursor-pointer transition ease-in duration-400 overflow-hidden'>
+    <div className='relative z-1 w-2xl w-[28rem] min-h-[28rem] min-w-[20rem] mx-auto shadow-custom bg-gray-900 rounded-lg cursor-pointer transition ease-in duration-400 overflow-hidden'>
       <div className='bg-gray-500'>
         <a href={url} target="_blank" rel="noreferrer">
           <img src={img} alt="preview thumbnail of a project" className='w-[100%] object-contain ease-in duration-300 shadow-xl opacity-100 hover:scale-110'/>
