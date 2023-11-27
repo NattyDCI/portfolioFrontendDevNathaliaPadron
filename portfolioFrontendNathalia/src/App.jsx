@@ -10,19 +10,13 @@ import {
   Abilities
 } from "./components";
 
-import { useContext } from "react";
+import { useContext, heroRef } from "react";
 import { MainContext } from "./Context";
 
 const App = () => {
 
-  const contextValue = useContext(MainContext);
 
-  if (!contextValue) {
-  // Handle the case when the context value is null or undefined
-    return <div>No heroRef available</div>;
-  }
-
-  const { heroRef } = contextValue;
+  const { heroRef } = useContext(MainContext);
 
   return (
     
@@ -44,11 +38,10 @@ const App = () => {
         </div>
       </div>
       
-      :
-      <div className={`dark:bg-primary bg-white ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`dark:bg-primary bg-white ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          < About />
           < ProjectSection />
+          < About />
           < Contact />
           < Footer />
         </div>

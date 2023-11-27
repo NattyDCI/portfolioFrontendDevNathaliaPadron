@@ -11,8 +11,8 @@ const About = () => {
   const { aboutRef } = useContext(MainContext)
 
   return (
-    <div ref={aboutRef} className={`flex-col py-64 w-full items-center justify-center `}>
-      <div id="about" className='pt-40'>
+    <div ref={aboutRef} className={`flex-col mb-24 w-full items-center justify-center `}>
+      <div id="about">
         <h1  className='dark:text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
             ABOUT
         </h1> 

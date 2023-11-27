@@ -9,7 +9,7 @@ const Hero = () => {
   const { contactRef, heroRef } = useContext(MainContext);
   const buttonText = "Get in Touch!"
   return (
-    <section id="home" ref={heroRef} className={`w-full flex flex-col justify-between items-center mb-5`}>
+    <section id="home" ref={heroRef} className={`w-full h-[100%] flex flex-col justify-between items-center mb-12`}>
       <div className={` ${styles.flexCenter} dark:bg-primary bg-white sm:flex-row flex-col ss:px-16 px-4 mt-20 w-[85%]`}>
       <div className="w-full">
         <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] dark:text-white text-offDark leading-[50px] w-full">

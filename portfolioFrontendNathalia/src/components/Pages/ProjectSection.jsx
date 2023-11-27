@@ -10,19 +10,15 @@ const ProjectSection = () => {
   const [switchWork, setSwitchWork] = useState(true);
 
   return (
-    <div ref={workRef} className={`flex-col py-64 w-full items-center justify-center `}>
-      <div id="work" className='pt-5'>
-        <h1 className='dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold py-2'>
+    <div ref={workRef} className={`flex-col mb-8 w-full items-center justify-center pt-[40rem]`}>
+        <p className='dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold'>
           WORK
-        </h1>
-      </div>
-      
-       
-      <div className='relative w-full flex flex-column items-center justify-center z-10 drop-shadow-lg '>
+        </p>
+        <div className='relative flex flex-column items-center justify-center content-center z-10 drop-shadow-lg '>
         
           {switchWork ? (
-            <div className="bg-grey-900 w-[full] pt-14 pb-60">
-            <div className="w-[100%] max-w-7xl mx-auto relative flex flex-wrap gap-20 pb-16">
+            <div className="bg-grey-900 w-[full] mt-6 mb-60 justify-center">
+            <div className="w-[90%] max-w-7xl mx-auto relative flex flex-wrap gap-6 pb-16">
           
               {Projects.map((project, index) => {
                 return (
@@ -33,8 +29,8 @@ const ProjectSection = () => {
               )}
             </div>
             </div>
-          ) : <div className="bg-grey-900 w-[full] pt-14 pb-60 ">
-          <div className=" w-full max-w-7xl mx-auto relative flex flex-wrap gap-20 pb-16">
+          ) : <div className="bg-grey-900 w-[full] mt-6 mb-60 justify-center items-center">
+          <div className=" w-[90%] max-w-7xl mx-auto relative flex flex-wrap gap-6 pb-16">
         
             {Projects2.map((project, index) => {
               return (

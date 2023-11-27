@@ -284,7 +284,7 @@ export const Projects = [
         img: eCommerce_Thumbnail,
         url: "https://all-things-interior.netlify.app/",
         repo: "https://github.com/NattyDCI/e-commerce-react-app",
-        para: "In this project I experiemented with CSS utility framework SASS and various component libraries for elements such as the Carousel and contact form validation. Experimented with operations in React using Context for state management. Furthermore worked on the styling and overall look of the website. " 
+        para: "E-commerce website using CSS utility framework SASS and various component libraries. Experimented with operations in React using Context for state management. " 
     },
     {
         id: "4",
