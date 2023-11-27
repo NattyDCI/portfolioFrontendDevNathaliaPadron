@@ -56,7 +56,8 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-0" : "mr-10" 
             } `}
           >
-            <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 px-4 w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
+            <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
+            className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 px-4 w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
               {nav.title}     
             </button>
           </li>
@@ -65,7 +66,7 @@ const Navbar = () => {
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        {toggle ? <CloseIcon/> : <HamburgerIcon/>}
+        {toggle ? <CloseIcon addedStyles="dark:fill-offWhite fill-offDark"/> : <HamburgerIcon addedStyles="dark:fill-offWhite fill-offDark"/>}
             
         <div
           className={`${toggle ? "flex" : "hidden"} p-6
@@ -79,9 +80,6 @@ const Navbar = () => {
           justify-end items-center 
           flex-1 flex-col"
           >
-            <li onClick={toggleTheme}> 
-            <Moon addedStyles={"dark:fill-white fill-offDark mb-4"}/>
-            </li>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
@@ -94,6 +92,9 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li onClick={toggleTheme}> 
+            <Moon addedStyles={"dark:fill-white fill-offDark mt-4"}/>
+            </li>
           </ul>
         </div>
       </div>

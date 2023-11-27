@@ -269,7 +269,7 @@ export const Projects = [
         img: Mlay_Tours_Project,
         url: "https://mlaytours.onrender.com/",
         repo: "https://github.com/Final-Project-Group-4/Backend-Project",
-        para: "Mern Stack Project for real life client. The company offers trips in the Region of Tanzania, Afrika. The Project includes: Server Side Programming and language translation support. Wireframes were created in Figma. "
+        para: "Mern Stack Project for company offerings trips in Tanzania, Afrika. Features include Server Side Programming and language translation support. Wireframes were created in Figma. "
     },
     {
         id: "2",
