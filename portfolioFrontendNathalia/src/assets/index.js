@@ -40,4 +40,6 @@ export { default as EnvelopeIcon } from "./EnvelopeIcon.jsx";
 export { default as MessageIcon } from "./MessageIcon.jsx";
 export { default as Behance } from "./Behance.jsx";
 export { default as Linkedin } from "./Linkedin.jsx";
-export { default as Github } from "./Github.jsx"
+export { default as Github } from "./Github.jsx";
+export { default as CloseIcon } from "./CloseIcon.jsx";
+export { default as HamburgerIcon } from "./HamburgerIcon.jsx"

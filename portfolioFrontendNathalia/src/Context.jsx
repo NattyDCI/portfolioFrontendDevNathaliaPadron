@@ -1,5 +1,5 @@
 import React from 'react';
-import { createContext, useRef } from 'react';
+import { createContext, useRef, useState } from 'react';
 
 
 export const MainContext = createContext();
@@ -10,6 +10,8 @@ export function ContextProvider({ children }) {
     const aboutRef = useRef(null);
     const contactRef = useRef(null);
     
+    const [toggle, setToggle] = useState(false);
+
     let options = { behavior: "smooth", block:"center" };
 
     const heroScrollHandler = (currentRef) => {
@@ -27,6 +29,8 @@ export function ContextProvider({ children }) {
         aboutRef,
         contactRef,
         heroScrollHandler,
+        setToggle,
+        toggle
      }}
     >
      {children}
