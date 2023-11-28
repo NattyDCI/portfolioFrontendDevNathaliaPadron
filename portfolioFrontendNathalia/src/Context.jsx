@@ -10,6 +10,7 @@ export function ContextProvider({ children }) {
     const contactRef = useRef(null);
     
     const [toggle, setToggle] = useState(false);
+    const [switchWork, setSwitchWork] = useState(true);
 
     let options = { behavior: "smooth", block:"center" };
 
@@ -29,7 +30,9 @@ export function ContextProvider({ children }) {
         contactRef,
         heroScrollHandler,
         setToggle,
-        toggle
+        toggle,
+        switchWork,
+        setSwitchWork
      }}
     >
      {children}

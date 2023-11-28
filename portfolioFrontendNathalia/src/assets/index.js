@@ -29,4 +29,5 @@ export { default as Behance } from "./Behance.jsx";
 export { default as Linkedin } from "./Linkedin.jsx";
 export { default as Github } from "./Github.jsx";
 export { default as CloseIcon } from "./CloseIcon.jsx";
-export { default as HamburgerIcon } from "./HamburgerIcon.jsx"
+export { default as HamburgerIcon } from "./HamburgerIcon.jsx";
+import { default as ArrowtoLeft } from "./ArrowtoLeft.jsx"
