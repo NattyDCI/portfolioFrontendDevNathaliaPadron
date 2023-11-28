@@ -4,10 +4,7 @@ import {
   MessageIcon,
   EnvelopeIcon,
   PersonIcon,
-  behanceLogo,
-  linkedInLogo,
-  githubLogo,
-  paperplaneIcon,
+  paperplaneIcon
 } from "../../assets";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -69,8 +66,8 @@ const Contact = () => {
           </p>
           <br />
           <p className="font-opensans dark:text-white text-offDark text-2lg">
-            Write me a request or question! I'm interested in working on
-            <span className="font-opensans font-bold italic text-2lg">
+            Write me a request or question! I'm interested in working on 
+            <span className="font-opensans ml-1 font-bold italic text-2lg">
               large and creative projects.
             </span>
           </p>

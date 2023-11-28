@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useContext, useRef } from "react";
 
 import { navLinks } from "../constants";
-import { moonIcon } from "../assets";
 import { CloseIcon, HamburgerIcon } from "../assets";
 import { MainContext } from "../Context";
 import { Moon } from "../assets";

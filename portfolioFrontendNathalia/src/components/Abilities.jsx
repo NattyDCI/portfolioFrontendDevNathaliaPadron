@@ -19,7 +19,7 @@ const Abilities = () => {
   return (
     <div className={`flex sm:flex-row flex-col gap-4 xs:px-4 ss:px-6 sm:px-8 md:px-20 lg:px-40 xl:px-42 p-6 overflow-auto`}>
       {features.map((feat, index) => 
-        <div className={`flex-1 flex-grow flex-shrink shadow-custom dark:bg-primary bg-gray-100 rounded-3xl py-6 ss:px-2 sm:px-2 md:px-4 px-8`}>
+        <div key={feat.id} className={`flex-1 flex-grow flex-shrink shadow-custom dark:bg-primary bg-gray-100 rounded-3xl py-6 ss:px-2 sm:px-2 md:px-4 px-8`}>
             <div className={`${styles.flexCenter} flex-col text-center `}> 
               <div className={`${styles.flexCenter} w-[70px] h-[70px] mb-3`}>
                 {generateIconComponent(feat.icon)} 

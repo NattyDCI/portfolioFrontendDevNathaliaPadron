@@ -1,5 +1,5 @@
 import React from "react";
-import { agile, behanceLogo, design_minded_icon, discordLogo, envelopeIcon, girlDesk3D, githubLogo, sassLogo, cssLogo, htmlLogo, javascriptLogo, linkedInLogo, messageIcon, mongodbLogo, moonIcon, multiculturalIcon, nodejsLogo,  personIcon, profile_bewerbung_foto, reactLogo,typescript_logo, paperplaneIcon, backtoTop, hamburguerMenuIcon, closeIcon, Mlay_Tours_Project, Neuromorphic_music_player, eCommerce_Thumbnail, Animation_puppy, Find_Pokemon_Fetching, Bootstrap_styling_website_example, ticTacToeThumbnail } from "../assets";
+import { sassLogo, cssLogo, htmlLogo, javascriptLogo, mongodbLogo, nodejsLogo, reactLogo, typescript_logo, backtoTop, Mlay_Tours_Project, Neuromorphic_music_player, eCommerce_Thumbnail, Animation_puppy, Find_Pokemon_Fetching, Bootstrap_styling_website_example, ticTacToeThumbnail, countdown_thumbnail } from "../assets";
 
 export const navLinks = [
     {
@@ -219,48 +219,21 @@ export const contactForm = {
     inputs: [
         {
             name: "Full name",
-            icon: personIcon,
+            
         },
         {
             name: "E.g marcsummer@gmail.com",
-            icon: envelopeIcon,
+            
         },
         {
             name: "leave me a Message",
-            icon: messageIcon,
+            
         },
     ],
     sendbutton: "send",
-    icon: paperplaneIcon,
+    
 }
 
-export const footer = [
-    {
-        id: "social-media-1",
-        icon: linkedInLogo,
-        link: "",
-    },
-    {
-        id: "social-media-2",
-        icon: behanceLogo,
-        link: "",
-    },
-    {
-        id: "social-media-3",
-        icon: githubLogo,
-        link: "",
-    },
-    {
-        id: "social-media-4",
-        icon: discordLogo,
-        link: "",
-    },
-    {
-        id: "goTotop",
-        icon: backtoTop,
-        link: "",
-    },
-  ];
 
 export const Projects = [
     {
@@ -310,7 +283,7 @@ export const Projects2 = [
         title: "Website for a Travel Finder",
         img: Bootstrap_styling_website_example,
         url: "https://codepen.io/nattydci/pen/BaJpLQM",
-        para: "Travel Finder that shows styling with Bootstrap CSS component Library"
+        para: "Example exercise that shows template for travel Agency. Styling with Bootstrap utility based CSS component Library. "
 
     },
     {
@@ -318,15 +291,16 @@ export const Projects2 = [
         title: "Tic-tac-toe",
         img: ticTacToeThumbnail,
         url: "https://codepen.io/nattydci/pen/NWoMVpe",
-        para: "tic-tac-toe game"
+        para: "tic-tac-toe game to work on State management. Game will stop as soon as there is a winner and let's you restart the game. "
 
     },
     {
         id: "4",
-        title: "Neuromorphic Music Player",
-        img: Neuromorphic_music_player,
-        url: "https://codepen.io/nattydci/pen/LYeYOGY",
-        repo: "https://github.com/Final-Project-Group-4/Backend-Project"
+        title: "Countdown to Birthday",
+        img: countdown_thumbnail,
+        url: "https://fbw-wd22-e01-rockstars.github.io/comingsoon/",
+        repo: "https://github.com/Fbw-wd22-e01-Rockstars/comingsoon",
+        para: "The page shows a count down of days, hours, minutes, and seconds until my Birthday 19-11-2024!🎉"
 
     },
 

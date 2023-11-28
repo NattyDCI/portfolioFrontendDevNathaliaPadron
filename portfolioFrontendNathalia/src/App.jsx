@@ -28,7 +28,7 @@ const App = () => {
         </div>
       </div>
       <div className='md:block hidden'>
-        <hr class="flex-grow border-t dark:border-gray-300 border-black z-1"></hr>
+        <hr className="flex-grow border-t dark:border-gray-300 border-black z-1"></hr>
       </div>
 
       <div className={`${styles.flexStart}`}>

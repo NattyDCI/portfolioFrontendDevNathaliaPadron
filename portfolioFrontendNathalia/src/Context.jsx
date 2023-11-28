@@ -1,7 +1,6 @@
 import React from 'react';
 import { createContext, useRef, useState } from 'react';
 
-
 export const MainContext = createContext();
 
 export function ContextProvider({ children }) {

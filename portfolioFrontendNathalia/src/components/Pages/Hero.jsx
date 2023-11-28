@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "../../style";
-import { personIcon, profile_bewerbung_foto } from "../../assets";
+import { profile_bewerbung_foto } from "../../assets";
 import { Abilities, StyledButton } from "../index";
 import { navLinks } from "../../constants";
 import { MainContext } from "../../Context";
