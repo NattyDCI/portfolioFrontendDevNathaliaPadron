@@ -30,4 +30,4 @@ export { default as Linkedin } from "./Linkedin.jsx";
 export { default as Github } from "./Github.jsx";
 export { default as CloseIcon } from "./CloseIcon.jsx";
 export { default as HamburgerIcon } from "./HamburgerIcon.jsx";
-import { default as ArrowtoLeft } from "./ArrowtoLeft.jsx"
+export { default as ArrowtoLeft } from "./ArrowtoLeft.jsx"

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { ArrowtoLeft } from "../../assets"
 
 const ProjectSection = () => {
-  const { workRef } = useContext(MainContext);
+  const { workRef, switchWork } = useContext(MainContext);
   
 
   return (
@@ -47,9 +47,10 @@ const ProjectSection = () => {
           }
           <div className="w-[95%] max-w-[125rem] text-5xl flex justify-between absolute top-[41%] translate-x[-50%] z-10 cursor-pointer">
           <ArrowtoLeft
-            addedStyles="arrow dark:text-white text-offDark text-[34px]"
+            addedStyles="arrow dark:fill-white fill-offDark text-offDark"/>
+            <ArrowtoLeft
+            addedStyles="arrow dark:fill-white fill-offDark ransform rotate-180"/>
             
-          />
           
         </div>
           
