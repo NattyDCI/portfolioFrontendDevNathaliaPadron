@@ -13,7 +13,9 @@ import StyledButton from "../StyledButton";
 import { navLinks } from "../../constants";
 import { MainContext } from "../../Context";
 
+
 const Contact = () => {
+  
   const { contactRef } = useContext(MainContext);
   const form = useRef();
   const buttonText = "Send";
