@@ -5,7 +5,6 @@ import { navLinks } from "../constants";
 import { CloseIcon, HamburgerIcon } from "../assets";
 import { MainContext } from "../Context";
 import { Moon } from "../assets";
-import StyledButton from "./StyledButton";
 import styles from "../style";
 
 
@@ -41,9 +40,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav id="home" className="w-full flex py-3 justify-between items-center navbar dark:bg-primary bg-white">
-      <p className="font-qwigley text-[24px] dark:text-white text-primary">Nathalia Padron</p>
-
+    <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-white">
+      <p className="font-qwigley text-[24px] dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme}>
         <Moon addedStyles={"dark:fill-white"}/>
@@ -56,7 +54,7 @@ const Navbar = () => {
             } `}
           >
             <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-            className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 px-4 w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
+            className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
               {nav.title}     
             </button>
           </li>

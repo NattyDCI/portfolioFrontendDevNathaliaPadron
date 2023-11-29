@@ -10,7 +10,7 @@ const Hero = () => {
   const buttonText = "Get in Touch!"
   return (
     <section id="home" ref={heroRef} className={`h-[100%] flex flex-col justify-between items-center my-12`}>
-      <div className={`grid gap-4 dark:bg-primary bg-white sm:grid-cols-2`}>
+      <div className={`grid gap-4 dark:bg-primary bg-white ss:grid-cols-2`}>
         <div>
           <h1 className="font-oswald font-semibold text-[45px] dark:text-white text-offDark leading-[50px]">
             Junior <br/> <span className="text-gradient">Frontend Developer</span>
@@ -19,7 +19,7 @@ const Hero = () => {
               Hey there!<br /> I'm Nathalia Padrón.
           </p> 
           <p className="font-opensans font-light ss:text-[18px] text-[12px]"> Based in Stuttgart, Germany.</p>
-          <div className="sm:block hidden">
+          <div className="ss:block hidden">
             < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
           {/* gradient end */}
-          <div className="sm:hidden flex justify-center items-center">
+          <div className="ss:hidden flex justify-center items-center">
             < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} link={`#${navLinks[3].id}`} className="mt-4"/>
           </div>
         </div>  

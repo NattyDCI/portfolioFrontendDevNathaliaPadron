@@ -17,7 +17,7 @@ const Abilities = () => {
     return null  }
 
   return (
-    <div className={`grid gap-6 sm:grid-cols-3 mt-12 max-w-7xl sm:w-full w-[80%]`}>
+    <div className={`grid gap-6 sm:grid-cols-3 mt-12 max-w-7xl sm:w-[90%] md:w-[80%] lg:w-[75%] w-70%`}>
       {features.map((feat, index) => 
         <div key={feat.id} className={`shadow-custom dark:bg-primary bg-gray-100 rounded-3xl p-6`}>
             <div className={`${styles.flexCenter} flex-col text-center`}> 
