@@ -25,19 +25,19 @@ export const features = [
         id: "feature-1",
         icon: "agile",
         title: "Agile",
-        content: "I am familiar working with Agile framework, involved in the planning and improving the digital interface with each iteration", 
+        content: "I am familiar working with an Agile framework, active in planning and setting prios for improving the UI with each iteration.", 
     },
     {
         id: "feature-2",
         icon: "designMinded",
         title: "Design-minded",
-        content: "The driving aspect for my designs has a start in the consideration of human interaction. I also love to learn about new UX/UI trends", 
+        content: "The driving aspect for my designs has a start in the consideration of human interaction. I also love to learn about new UX/UI trends.", 
     },
     {
         id: "feature-3",
         icon: "multicultural",
         title: "Multicultural",
-        content: "I consider myself as an adaptable and open individual, I speak fluent english and german", 
+        content: "I consider myself as an adaptable and open individual. I believe that practicing non-violent communication brings a positive vibe to the work place.", 
     },
 ]
 
@@ -205,13 +205,6 @@ export const about =
         },
     ]
         
-export const cards = [
-    {
-        name: "MLAY TOURS",
-        content: "A MERN Stack project developed as a last project for a bootcamp I finished at DCI. Worked with a customer and developed brand identity.",
-        link: "",
-    }
-]
 
 export const contactForm = {
     parragraf1: "I'm interested in a position within a team environment in a Web Agency working on large and creative projects.",
@@ -242,14 +235,14 @@ export const Projects = [
         img: Mlay_Tours_Project,
         url: "https://mlaytours.onrender.com/",
         repo: "https://github.com/Final-Project-Group-4/Backend-Project",
-        para: "Mern Stack Project for company offerings trips in Tanzania, Afrika. Features include Server Side Programming and language translation support. Wireframes were created in Figma. "
+        para: "Mern Stack Project for company that offers trips to Tanzania. Features include Server Side Programming and language translation support. Wireframes were created in Figma. "
     },
     {
         id: "2",
         title: "Neuromorphic Music Player",
         img: Neuromorphic_music_player,
         url: "https://codepen.io/nattydci/pen/LYeYOGY",
-        para: "Small Project showing CSS skills and the use of Neuroformic elements, Click to find a link to my codepen. "
+        para: "Small Project showing CSS skills and the use of Neuromorphic elements, Click to find a link to my codepen. "
     },
     {
         id:"3",
@@ -257,14 +250,14 @@ export const Projects = [
         img: eCommerce_Thumbnail,
         url: "https://all-things-interior.netlify.app/",
         repo: "https://github.com/NattyDCI/e-commerce-react-app",
-        para: "E-commerce website using CSS utility framework SASS and various component libraries. Experimented with operations in React using Context for state management. " 
+        para: "E-commerce Website using SASS as CSS utility framework. Experimented with operations in React using Context for state management. This is not optimized for mobile. " 
     },
     {
         id: "4",
         title: "Text Animation with CSS",
         img: Animation_puppy,
         url: "https://codepen.io/nattydci/pen/OJzRbLR",
-        para: "Animation done with CSS, click to find a link to my codepen. "
+        para: "Animation shows text sliding into the frame. This exercise let me experiment with animations done solely with CSS, click to find a link to my codepen. "
 
     }
     
@@ -276,14 +269,14 @@ export const Projects2 = [
         title: "Pokemon Finder",
         img: Find_Pokemon_Fetching,
         url: "https://codepen.io/nattydci/pen/eYMgazJ",
-        para: "Search bar lets you enter the name of a Pokemon of your choice and upon clicking search it returns a relevant card showing all the abilities and a picture. This projects helped experiment with DOM manipulation and styling. "
+        para: "Search bar lets you search for a Pokemon of your choice and returns a relevant card showing all the abilities and a picture. This projects helped experiment with DOM manipulation and fetching APIs. "
     },
     {
         id: "2",
         title: "Website for a Travel Finder",
         img: Bootstrap_styling_website_example,
         url: "https://codepen.io/nattydci/pen/BaJpLQM",
-        para: "Example exercise that shows template for travel Agency. Styling with Bootstrap utility based CSS component Library. "
+        para: "Example exercise that shows a mock-up for travel Agency. Styling with Bootstrap utility based CSS component Library. "
 
     },
     {
@@ -291,7 +284,7 @@ export const Projects2 = [
         title: "Tic-tac-toe",
         img: ticTacToeThumbnail,
         url: "https://codepen.io/nattydci/pen/NWoMVpe",
-        para: "tic-tac-toe game to work on State management. Game will stop as soon as there is a winner and let's you restart the game. "
+        para: "tic-tac-toe game let me experiment State management. Game will stop as soon as there is a winner and let's you restart the game. "
 
     },
     {
@@ -300,7 +293,7 @@ export const Projects2 = [
         img: countdown_thumbnail,
         url: "https://fbw-wd22-e01-rockstars.github.io/comingsoon/",
         repo: "https://github.com/Fbw-wd22-e01-Rockstars/comingsoon",
-        para: "The page shows a count down of days, hours, minutes, and seconds until my Birthday 19-11-2024!🎉"
+        para: "The page shows a count down of days, hours, minutes, and seconds until my Birthday 19-11-2024!🎉. "
 
     },
 
