@@ -40,7 +40,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-white">
+    <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-offWhite">
       <p className="font-qwigley text-[24px] dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme}>
