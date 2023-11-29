@@ -17,17 +17,17 @@ const Abilities = () => {
     return null  }
 
   return (
-    <div className={`flex sm:flex-row flex-col gap-4 xs:px-4 ss:px-6 sm:px-8 md:px-20 lg:px-40 xl:px-42 p-6 overflow-auto`}>
+    <div className={`grid gap-6 sm:grid-cols-3 mt-12 max-w-7xl sm:w-full w-[80%]`}>
       {features.map((feat, index) => 
-        <div key={feat.id} className={`flex-1 flex-grow flex-shrink shadow-custom dark:bg-primary bg-gray-100 rounded-3xl py-6 ss:px-2 sm:px-2 md:px-4 px-8`}>
-            <div className={`${styles.flexCenter} flex-col text-center `}> 
+        <div key={feat.id} className={`shadow-custom dark:bg-primary bg-gray-100 rounded-3xl p-6`}>
+            <div className={`${styles.flexCenter} flex-col text-center`}> 
               <div className={`${styles.flexCenter} w-[70px] h-[70px] mb-3`}>
                 {generateIconComponent(feat.icon)} 
               </div>
-              <p className={`font-bitter italic text-extrabold text-xl dark:text-white text-offDark font-semibold mb-2`}>
+              <p className={`font-bitter italic text-extrabold text-lg dark:text-white text-offDark font-semibold mb-2`}>
                 {feat.title}
               </p>
-              <p className={`font-opensans font-semibold dark:text-white text-offDark`}>
+              <p className={`font-opensans font-normal text-sm dark:text-white text-offDark`}>
                 {feat.content}
               </p>
             </div>

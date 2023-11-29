@@ -31,7 +31,7 @@ const App = () => {
         <hr className="flex-grow border-t dark:border-gray-300 border-black z-1"></hr>
       </div>
 
-      <div className={`${styles.flexStart}`}>
+      <div className={`${styles.flexStart} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
           

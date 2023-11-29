@@ -9,43 +9,34 @@ const Hero = () => {
   const { contactRef, heroRef } = useContext(MainContext);
   const buttonText = "Get in Touch!"
   return (
-    <section id="home" ref={heroRef} className={`w-full h-[100%] flex flex-col justify-between items-center mb-12`}>
-      <div className={` ${styles.flexCenter} dark:bg-primary bg-white sm:flex-row flex-col ss:px-16 px-4 mt-20 w-[85%]`}>
-      <div className="w-full">
-        <h1 className="font-oswald font-semibold ss:text-[50px] text-[45px] dark:text-white text-offDark leading-[50px] w-full">
-          Junior  <br/>
-        <span className="text-gradient">Frontend Developer</span>
-        <div className={` dark:text-white text-offDark ss:text-[20px] text-[12px] ss:leading-[26px] leading-[20px] mt-5`}>
-          <p className="font-opensans font-semibold">
-            Hey there!<br className={`sm:block hidden `} /> I'm Nathalia Padrón.
+    <section id="home" ref={heroRef} className={`h-[100%] flex flex-col justify-between items-center my-12`}>
+      <div className={`grid gap-4 dark:bg-primary bg-white sm:grid-cols-2`}>
+        <div>
+          <h1 className="font-oswald font-semibold text-[45px] dark:text-white text-offDark leading-[50px]">
+            Junior <br/> <span className="text-gradient">Frontend Developer</span>
+          </h1>
+          <p className="font-opensans font-semibold dark:text-white text-offDark text-lg leading-[20px] mt-5">
+              Hey there!<br /> I'm Nathalia Padrón.
           </p> 
-          <p className="font-opensans font-light ss:text-[18px] text-[12px]"> 
-          Based in Stuttgart, Germany.</p>
+          <p className="font-opensans font-light ss:text-[18px] text-[12px]"> Based in Stuttgart, Germany.</p>
+          <div className="sm:block hidden">
+            < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
+          </div>
         </div>
         
-        </h1> 
-        
-        <div className="md:block hidden">
-          < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
-        </div>
-        </div>
-          
-         
-        <div className={`relative xl:ml-5`}>
-          <img src={profile_bewerbung_foto} alt="" className={`min-w-[250px] h-[100%] relative z-[5] sm:mb-0 mb-10 sm:mt-0 mt-2`} />
+        <div className={`relative`}>
+          <img src={profile_bewerbung_foto} alt="profile photo" className={`min-w-[250px] h-[full] z-[5]`} />
           {/* gradient start */}
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
           {/* gradient end */}
-          <div className="md:hidden block flex justify-center items-center">
-            < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} link={`#${navLinks[3].id}`} className="mt-10"/>
-           </div>
+          <div className="sm:hidden flex justify-center items-center">
+            < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} link={`#${navLinks[3].id}`} className="mt-4"/>
+          </div>
         </div>  
       </div>
-      <div className={`md:py-5 py-12`}>
-        < Abilities />
-      </div> 
+      < Abilities />
     </section>
   );
 };
