@@ -57,7 +57,7 @@ export const about =
         },
         {   
             name: "parragraf3",
-            content: " I am originally from Caracas, Venezuela and I am currently based in Stuttgart, since 2016.",
+            content: " I'm a Junior Front-end Developer born in Caracas, Venezuela based in Stuttgart, since 2016. I have both Italian and Venezuelan citizenship and I can speak English and German.",
         },
         {   
             name: "parragraf4",

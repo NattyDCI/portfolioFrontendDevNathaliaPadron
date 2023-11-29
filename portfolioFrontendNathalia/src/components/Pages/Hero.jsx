@@ -11,11 +11,9 @@ const Hero = () => {
   return (
     <section id="home" ref={heroRef} className={`h-[100%] flex flex-col justify-between items-center my-12`}>
       <div className={`grid gap-4 dark:bg-primary bg-offWhite ss:grid-cols-2`}>
-        <div>
-          <h1 className="font-oswald font-semibold text-[45px] dark:text-white text-offDark leading-[50px]">
-            Junior <br/> <span className="text-gradient">Frontend Developer</span>
-          </h1>
-          <p className="font-opensans font-semibold dark:text-white text-offDark text-lg leading-[20px] mt-5">
+        <div> 
+          <p className="font-oswald font-semibold text-gradient text-[35px] leading-2">Frontend Developer</p>
+          <p className="font-opensans font-semibold dark:text-white text-offDark text-lg leading-5 ">
               Hey there!<br /> I'm Nathalia Padrón.
           </p> 
           <p className="font-opensans font-light ss:text-[18px] text-[12px]"> Based in Stuttgart, Germany.</p>
