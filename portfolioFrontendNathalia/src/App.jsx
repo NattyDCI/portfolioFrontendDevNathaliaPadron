@@ -38,7 +38,7 @@ const App = () => {
         </div>
       </div>
       
-      <div className={`dark:bg-primary bg-white ${styles.flexCenter}`}>
+      <div className={`dark:bg-primary bg-offWhite ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           < ProjectSection />
           < About />

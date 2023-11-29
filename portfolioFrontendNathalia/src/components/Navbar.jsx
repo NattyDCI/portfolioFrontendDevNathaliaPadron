@@ -67,7 +67,7 @@ const Navbar = () => {
             
         <div
           className={`${toggle ? "flex" : "hidden"} p-6
-          dark:bg-primary bg-white
+          dark:bg-primary bg-offWhite
         absolute z-[10] top-20 right-0 mx-4
         my-2 min-w-[200px] min-h-[300px] rounded-xl 
         sidebar items-center shadow-custom`}
