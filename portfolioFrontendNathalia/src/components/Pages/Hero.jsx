@@ -9,10 +9,10 @@ const Hero = () => {
   const { contactRef, heroRef } = useContext(MainContext);
   const buttonText = "Get in Touch!"
   return (
-    <section id="home" ref={heroRef} className={`h-screen flex flex-col content-center items-center my-12`}>
+    <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center my-12`}>
       <div className={`grid gap-4 dark:bg-primary bg-offWhite ss:grid-cols-2`}>
         <div> 
-          <p className="font-oswald font-semibold text-gradient text-[35px] leading-2">Frontend Developer</p>
+          <p className="font-oswald font-semibold text-gradient text-lg leading-2">Frontend Developer</p>
           <p className="font-opensans font-semibold dark:text-white text-offDark text-lg leading-5 ">
               Hey there!<br /> I'm Nathalia Padrón.
           </p> 

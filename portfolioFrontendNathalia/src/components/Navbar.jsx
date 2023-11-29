@@ -19,11 +19,8 @@ const Navbar = () => {
     toggle
   } = useContext(MainContext);
 
- 
-   
   function toggleTheme() {
     document.documentElement.classList.toggle("dark")
-
   }
   function referenceGenerator (navId){
       if (navId === "home") {
@@ -58,7 +55,6 @@ const Navbar = () => {
             </button>
           </li>
         ))}
-
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -84,7 +80,7 @@ const Navbar = () => {
                 }`}
               >
                 <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-                  className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
+                  className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold w-full h-[60px] cursor-pointer right-4`}> 
                     {nav.title}     
                 </button>
               </li>

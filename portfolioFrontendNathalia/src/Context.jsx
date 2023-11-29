@@ -11,15 +11,17 @@ export function ContextProvider({ children }) {
     
     const [toggle, setToggle] = useState(false);
     const [switchWork, setSwitchWork] = useState(true);
-
-    let options = { behavior: "smooth", block:"center" };
-
-    const heroScrollHandler = (currentRef) => {
-        if (currentRef.current.className === "wrapper")
-          options = { ...options, block: "start" };
     
-        currentRef.current.scrollIntoView(options);
-      };
+    const heroScrollHandler = (currentRef) => {
+      let offsetTop = currentRef.current.getBoundingClientRect().top + window.scrollY;
+    
+      if (currentRef.current.className === "wrapper") {
+        // Adjust offset for "start" alignment
+        offsetTop -= currentRef.current.style.paddingTop || 0;
+      }
+    
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    };
 
   return (
     <MainContext.Provider

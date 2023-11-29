@@ -235,7 +235,7 @@ export const Projects = [
         img: Mlay_Tours_Project,
         url: "https://mlaytours.onrender.com/",
         repo: "https://github.com/Final-Project-Group-4/Backend-Project",
-        para: "Mern Stack Project for company that offers trips to Tanzania. Features include Server Side Programming and language translation support. Wireframes were created in Figma. "
+        para: "Mern Stack Project for company that offers trips to Tanzania. Features include Server Side Programming and language translation support. "
     },
     {
         id: "2",
@@ -250,7 +250,7 @@ export const Projects = [
         img: eCommerce_Thumbnail,
         url: "https://all-things-interior.netlify.app/",
         repo: "https://github.com/NattyDCI/e-commerce-react-app",
-        para: "E-commerce Website using SASS as CSS utility framework. Experimented with operations in React using Context for state management. This is not optimized for mobile. " 
+        para: "Experienced with a CSS utility framework. Experimented with operations in React using Context for state management. " 
     },
     {
         id: "4",
@@ -269,7 +269,7 @@ export const Projects2 = [
         title: "Pokemon Finder",
         img: Find_Pokemon_Fetching,
         url: "https://codepen.io/nattydci/pen/eYMgazJ",
-        para: "Search bar lets you search for a Pokemon of your choice and returns a relevant card showing all the abilities and a picture. This projects helped experiment with DOM manipulation and fetching APIs. "
+        para: "Search bar lets you search for a Pokemon of your choice and returns a relevant card showing all the abilities and a picture. "
     },
     {
         id: "2",

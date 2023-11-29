@@ -12,7 +12,7 @@ const About = () => {
   
 
   return (
-    <div ref={aboutRef} className={`relative flex-col mb-24 w-full items-center justify-center`}>
+    <div ref={aboutRef}className={`max-h-screen flex-col mb-24 w-full items-center justify-center pt-20`}>
       <div id="about" className='pt-5'>
         <h1  className='dark:text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
             ABOUT
@@ -56,10 +56,10 @@ const About = () => {
               </p>
               
             </div>
-            <div className="flex flex-wrap sm:w-full mt-2 justify-center p-12">
+            <div className="flex flex-wrap sm:w-full mt-2 justify-center p-3 w-[70%]">
                 {logos.map((icon, index) =>  
                 
-                  <img src={icon.logo} alt={icon.name} key={icon.name} className="w-24 h-[100%] m-2"/> 
+                  <img src={icon.logo} alt={icon.name} key={icon.name} className="w-14 h-[100%] m-2"/> 
                 
                     )}
             </div>

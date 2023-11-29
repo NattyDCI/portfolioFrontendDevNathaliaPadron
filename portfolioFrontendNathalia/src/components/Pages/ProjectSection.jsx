@@ -4,6 +4,7 @@ import { Projects, Projects2 } from "../../constants";
 import { MainContext } from "../../Context";
 import { useContext } from "react";
 import { ArrowtoLeft } from "../../assets";
+import styles from "../../style";
 
 const ProjectSection = () => {
   const { workRef, switchWork } = useContext(MainContext);
@@ -11,13 +12,19 @@ const ProjectSection = () => {
   return (
     <div
       ref={workRef}
-      className={`flex-col w-["100%"] items-center justify-center `}
+      className={`flex-col w-screen content-center pt-12 items-center justify-center z-2`}
     >
-      <p className="font-opensans font-medium border-t-40px  border-mainPurple dark:text-white text-offDark text-4xl text-center w-full mb-5">WORK</p>
-      <div className="relative flex items-center justify-center content-center z-10 drop-shadow-lg ">
+     <div className='pt-5'>
+        <h1  className='dark:text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
+              WORK
+        </h1> 
+      </div>
+      <div className={`${styles.boxWidth} flex mx-auto w-full`}>
+
+      <div className="flex flex-wrap bg-grey-900 relative z-10 max-w-7xl w-[90%] gap-6 justify-center items-center mx-auto pb-16">
         {switchWork ? (
-          <div className="bg-grey-900 grid sm:grid-cols-2gap-6 justify-center items-center">
-            <div className="w-[90%] max-w-7xl mx-auto relative flex flex-wrap gap-6 pb-16">
+          <>
+            
               {Projects.map((project, index) => {
                 return (
                   <ProjectCard
@@ -31,11 +38,10 @@ const ProjectSection = () => {
                   ></ProjectCard>
                 );
               })}
-            </div>
-          </div>
+            
+          </>
         ) : (
-          <div className="bg-grey-900 grid sm:grid-cols-2gap-6 justify-center items-center">
-            <div className="w-[90%] max-w-7xl mx-auto relative flex flex-wrap gap-6 pb-16">
+          <>
               {Projects2.map((project, index) => {
                 return (
                   <ProjectCard
@@ -48,13 +54,14 @@ const ProjectSection = () => {
                   ></ProjectCard>
                 );
               })}
-            </div>
-          </div>
+            </>
+         
         )}
-        <div className="w-[95%] max-w-[160rem] text-5xl flex justify-between absolute top-[41%] translate-x[-50%] z-10 cursor-pointer">
+        <div className="w-[95%] max-w-[160rem] text-5xl flex justify-between absolute xs:top-[47%] ss:max-md:top-[47%] top-[47%] translate-x[-50%] z-7 cursor-pointer">
           <ArrowtoLeft addedStyles="arrow dark:fill-white fill-offDark text-offDark" />
           <ArrowtoLeft addedStyles="arrow dark:fill-white fill-offDark ransform rotate-180" />
         </div>
+      </div>
       </div>
     </div>
   );
