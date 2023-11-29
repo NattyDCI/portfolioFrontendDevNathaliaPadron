@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="font-opensans font-semibold dark:text-white text-offDark text-lg leading-5 ">
               Hey there!<br /> I'm Nathalia Padrón.
           </p> 
-          <p className="font-opensans font-light ss:text-[18px] text-[12px]"> Based in Stuttgart, Germany.</p>
+          <p className="font-opensans font-light dark:text-white text-offDark ss:text-[18px] text-[12px]"> Based in Stuttgart, Germany.</p>
           <div className="ss:block hidden">
             < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
           </div>

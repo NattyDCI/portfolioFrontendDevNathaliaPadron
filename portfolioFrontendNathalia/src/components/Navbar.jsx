@@ -19,8 +19,7 @@ const Navbar = () => {
     toggle
   } = useContext(MainContext);
 
- console.log(toggle,"show me")
-  const [ linktoRef, setRef ] = useState(null);
+ 
    
   function toggleTheme() {
     document.documentElement.classList.toggle("dark")
@@ -54,7 +53,7 @@ const Navbar = () => {
             } `}
           >
             <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-            className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
+            className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 w-full h-[60px]cursor-pointer hover:ring right-4 p-3 hover:ring-purple-300`}> 
               {nav.title}     
             </button>
           </li>
@@ -84,9 +83,10 @@ const Navbar = () => {
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 }`}
               >
-                <a href={`#${nav.id}`} className="dark:text-white text-offDark">
-                  {nav.title}
-                </a>
+                <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
+                  className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold w-full h-[60px]cursor-pointer hover:ring right-4 hover:ring-purple-300`}> 
+                    {nav.title}     
+                </button>
               </li>
             ))}
             <li onClick={toggleTheme}> 
