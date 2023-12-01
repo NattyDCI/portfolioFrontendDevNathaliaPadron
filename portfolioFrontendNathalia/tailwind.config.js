@@ -29,9 +29,7 @@ module.exports = {
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
-        qwigley: ["Qwigley", "cursive"],
         opensans: ["Open Sans", "sans-serif"],
-        bitter: ["bitter", "serif"],
       },
     },
     screens: {

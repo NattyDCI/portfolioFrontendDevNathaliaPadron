@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-offWhite">
-      <p className="font-qwigley text-[24px] dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
+      <p className="font-opensans semibold text-xs dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme}>
         <Moon addedStyles={"dark:fill-white"}/>
@@ -45,12 +45,12 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-bitter text-[20px] font-semibold cursor-pointer ${
+            className={`font-opensans font bold text-[20px] font-semibold cursor-pointer ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10" 
             } `}
           >
             <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-            className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold  hover:purple-600 w-full h-[60px]cursor-pointer hover:ring right-4 p-1 hover:ring-purple-300`}> 
+            className={`${styles.flexCenter} text-xl dark:text-offWhite text-offDark  hover:bg-purple-400 w-full h-[60px]cursor-pointer right-4 p-1`}> 
               {nav.title}     
             </button>
           </li>
@@ -65,7 +65,7 @@ const Navbar = () => {
           dark:bg-primary bg-offWhite
         absolute z-[10] top-20 right-0 mx-4
         my-2 min-w-[200px] min-h-[300px] rounded-xl 
-        sidebar items-center shadow-custom`}
+        sidebar items-center border-4 dark:border-slate-200 border-slate-200`}
         >
           <ul
             className="list-none flex 
@@ -75,12 +75,12 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={` cursor-pointer dark:text-offWhite text-offDark font-bitter text-[16px] font-semibold ${
+                className={` cursor-pointer dark:text-offWhite text-offDark font-opensans text-lg font-semibold ${
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 }`}
               >
                 <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-                  className={`${styles.flexCenter} text-xl dark:text-white text-offDark font-bitter font-semibold w-full h-[60px] cursor-pointer right-4`}> 
+                  className={`${styles.flexCenter} text-xl dark:text-white text-offDark w-full h-[60px] cursor-pointer right-4`}> 
                     {nav.title}     
                 </button>
               </li>
