@@ -243,7 +243,7 @@ export const Projects = [
         img: Neuromorphic_music_player,
         url: "https://codepen.io/nattydci/pen/LYeYOGY",
         codepen: "https://codepen.io/nattydci/pen/LYeYOGY",
-        para: "Small Project showing CSS skills and the use of Neuromorphic elements, Click to find a link to my codepen. "
+        para: "Small Project showing CSS skills and the use of Neuromorphic elements, focused on CSS styling. Click to find a link to my codepen. "
     },
     {
         id:"3",

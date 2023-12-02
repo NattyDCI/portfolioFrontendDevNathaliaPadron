@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-offWhite">
       <p className="font-opensans font-semibold text-xs dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        <li onClick={toggleTheme}>
+        <li onClick={toggleTheme} className="cursor-pointer">
         <Moon addedStyles={"dark:fill-white"}/>
         </li>
         {navLinks.map((nav, index) => (
@@ -50,7 +50,7 @@ const Navbar = () => {
             } `}
           >
             <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-            className={`${styles.flexCenter} text-xl dark:text-offWhite text-offDark  hover:bg-purple-400 w-full h-[60px]cursor-pointer right-4 p-1`}> 
+            className={`${styles.flexCenter} text-xl dark:text-offWhite text-offDark  hover:bg-purple-400 w-full h-[60px]cursor-pointer right-4 p-2`}> 
               {nav.title}     
             </button>
           </li>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
-            <li onClick={toggleTheme}> 
+            <li onClick={toggleTheme} className="cursor-pointer" > 
             <Moon addedStyles={"dark:fill-white fill-offDark mt-4"}/>
             </li>
           </ul>
