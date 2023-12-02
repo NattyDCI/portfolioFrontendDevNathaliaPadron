@@ -12,17 +12,18 @@ const Hero = () => {
     <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center my-12`}>
       <div className={`grid gap-4 dark:bg-primary bg-offWhite ss:grid-cols-2`}>
         <div> 
-          <h2 className="font-opensans font-semibold text-gradient text-4xl leading-2">FRONTEND DEVELOPER</h2>
-          <p className="font-opensans font-medium dark:text-white text-offDark text-lg leading-5 ">
+          <h2 className="font-oswald font-regular text-gray-950 dark:text-offWhite text-4xl leading-2">
+            <span className="text-3xl mr-2">Junior</span><br className="md:hidden block" />FRONT-END DEVELOPER</h2>
+          {/*<p className="font-opesans font-medium dark:text-white text-offDark text-lg leading-5 ">
               Hey there!<br /> I'm Nathalia Padrón.
-          </p> 
+          </p> */}
           <p className="font-opensans font-light dark:text-white text-offDark ss:text-[18px] text-[12px]"> Based in Stuttgart, Germany.</p>
           <div className="ss:block hidden">
             < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
           </div>
         </div>
         
-        <div className={`relative`}>
+        <div className={`mx-auto`}>
           <img src={profile_bewerbung_foto} alt="profile photo" className={`min-w-[250px] h-[full] z-[5]`} />
           {/* 
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

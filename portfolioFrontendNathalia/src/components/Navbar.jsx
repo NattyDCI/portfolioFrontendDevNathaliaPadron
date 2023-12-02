@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-offWhite">
-      <p className="font-opensans semibold text-xs dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
+      <p className="font-opensans font-semibold text-xs dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme}>
         <Moon addedStyles={"dark:fill-white"}/>

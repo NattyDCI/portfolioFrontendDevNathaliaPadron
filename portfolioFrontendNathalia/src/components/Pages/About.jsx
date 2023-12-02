@@ -12,8 +12,8 @@ const About = () => {
   
 
   return (
-    <div ref={aboutRef}className={`max-h-screen flex-col mb-24 w-full items-center justify-center pt-20`}>
-      <div id="about" className='pt-5'>
+    <div ref={aboutRef}className={`max-h-screen flex-col mb-64 w-full items-center justify-center pt-20`}>
+      <div id="about">
         <h1  className='dark:text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
             ABOUT
         </h1> 

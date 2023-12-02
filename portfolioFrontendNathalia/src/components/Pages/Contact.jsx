@@ -47,9 +47,9 @@ const Contact = () => {
   return (
     <div
       ref={contactRef}
-      className={`flex-col w-full items-center justify-center pt-4`}
+      className={`flex-col w-full items-center justify-center pt-24`}
     >
-      <div id="contact" >
+      <div id="contact" className="pt-5">
         <div className="dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold">
           <p>CONTACT</p>
         </div>
