@@ -12,7 +12,7 @@ const ProjectSection = () => {
   return (
     <div
       ref={workRef}
-      className={`flex-col w-screen content-center pt-12 items-center justify-center z-2`}
+      className={`flex-col xs-max-md:w-full w-[80%] mx-auto content-center pt-12 items-center justify-center z-2`}
     >
      <div className='pt-5'>
         <h1  className='dark:text-white text-offDark border-t-4 mx-auto border-mainPurple w-fit text-center text-4xl font-opensans font-bold'>
@@ -21,7 +21,7 @@ const ProjectSection = () => {
       </div>
       <div className={`${styles.boxWidth} flex mx-auto w-full`}>
 
-      <div className="flex flex-wrap bg-grey-900 relative z-10 max-w-7xl w-[90%] gap-6 justify-center items-center mx-auto pb-16">
+      <div className="flex flex-wrap bg-grey-900 relative z-10 max-w-7xl w-[90%] gap-2 justify-center items-center mx-auto pb-16">
         {switchWork ? (
           <>
             

@@ -31,3 +31,4 @@ export { default as Github } from "./Github.jsx";
 export { default as CloseIcon } from "./CloseIcon.jsx";
 export { default as HamburgerIcon } from "./HamburgerIcon.jsx";
 export { default as ArrowtoLeft } from "./ArrowtoLeft.jsx"
+export { default as ExternalLink } from "./ExternalLink.jsx"
