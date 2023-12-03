@@ -33,3 +33,4 @@ export { default as HamburgerIcon } from "./HamburgerIcon.jsx";
 export { default as ArrowtoLeft } from "./ArrowtoLeft.jsx"
 export { default as ExternalLink } from "./ExternalLink.jsx";
 export { default as logo_Nat_Website } from "./logo_Nat_Website.png";
+export { default as Illustration_bewerbung12 } from "./Illustration_bewerbung12.png"

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "../../style";
-import { profile_bewerbung_foto } from "../../assets";
+import { profile_bewerbung_foto, Illustration_bewerbung12 } from "../../assets";
 import { Abilities, StyledButton } from "../index";
 import { navLinks } from "../../constants";
 import { MainContext } from "../../Context";
@@ -9,7 +9,7 @@ const Hero = () => {
   const { contactRef, heroRef } = useContext(MainContext);
   const buttonText = "Get in Touch!"
   return (
-    <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center my-12`}>
+    <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center my-8`}>
       <div className={`grid gap-4 dark:bg-primary bg-offWhite ss:grid-cols-2`}>
         <div> 
           <h2 className="font-oswald font-regular mb-2 text-gray-950 dark:text-offWhite text-4xl leading-2">
@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         
         <div className={`mx-auto`}>
-          <img src={profile_bewerbung_foto} alt="profile photo" className={`min-w-[250px] h-[full] z-[5]`} />
+          <img src={Illustration_bewerbung12} alt="profile photo" className={`min-w-[150px] max-w-sm h-[full] z-[5]`} />
           {/* 
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
