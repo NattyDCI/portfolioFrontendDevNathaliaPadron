@@ -87,7 +87,7 @@ const Contact = () => {
                   <input
                     type="name"
                     name="user_name"
-                    className="w-full border border-input-border rounded-xl bg-input px-4 py-4 bg-violet-300"
+                    className="w-full border border-input-border rounded-xl bg-input px-4 py-4 bg-gray-200"
                     required
                   />
                 </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                   <input
                     type="email"
                     name="user_email"
-                    className="w-full border border-input-border bg-input px-4 py-4 rounded-xl bg-violet-300"
+                    className="w-full border border-input-border bg-input px-4 py-4 rounded-xl bg-gray-200"
                     required
                   />
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   <textarea
                     type="message"
                     name="message"
-                    className="w-full border border-input-border bg-input px-4 pt-4 h-56 resize-none bg-violet-300 rounded-xl"
+                    className="w-full border border-input-border bg-input px-4 pt-4 h-56 resize-none bg-gray-200 rounded-xl"
                     required
                   ></textarea>
                 </div>

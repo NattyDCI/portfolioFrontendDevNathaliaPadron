@@ -37,7 +37,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-offWhite">
+    <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary ">
       <img src={logo_Nat_Website} className={`w-[90px] h-[full]`}/>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme} className="cursor-pointer">
@@ -66,7 +66,7 @@ const Navbar = () => {
           dark:bg-primary bg-offWhite
         absolute z-[10] top-20 right-0 mx-4
         my-2 min-w-[200px] min-h-[300px] rounded-xl 
-        sidebar items-center border-4 dark:border-slate-200 border-slate-200`}
+        sidebar items-center border-2 dark:border-slate-700 border-slate-80 border-pink-80`}
         >
           <ul
             className="list-none flex 

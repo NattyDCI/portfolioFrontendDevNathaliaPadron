@@ -17,12 +17,13 @@ const ProjectCard = ({ img, title, para, url, repo, codepen }) => {
       <div className='flex flex-col justify-center items-center absolute dark:bg-slate-700 w-full min-h-[45%] h-[9rem] p-7 py-4 leading-relaxed bottom-5 left-0  bg-slate-200 cursor-grab text-center z-4'>
         <p className='font-opensans font-semibold text-md dark:text-white text-offDark mb-3'>{title}</p>
         <p className='font-opensans dark:text-white text-offDark font-regular text-justify text-sm'>{para}
+       <br />
         {repo ? (
-          <a className='font-bold text-mainPurple italic decoration-0 hover:underline hover:decoration-2 mb-3' href={repo} target="blank" rel="noreferrer">
-            Link to Repository <span className='inline-block align-text-bottom'><ExternalLink addedStyles={`dark:stroke-offWhite stroke-mainPurple`}/></span>
+          <a className='font-bold mx-auto mt-2 text-mainPurple italic decoration-0 hover:underline hover:decoration-2 mb-3' href={repo} target="blank" rel="noreferrer">
+            Link to Repository <span className='inline-block align-text-bottom'><ExternalLink addedStyles={`stroke-mainPurple`}/></span>
           </a> 
-        ) : <a className='text-mainPurple italic font-bold decoration-0  hover:underline hover:decoration-2 mb-3' href={codepen} target="blank" rel="noreferrer">
-        Link to codepen  <span className='inline-block align-text-bottom'><ExternalLink addedStyles={`dark:stroke-offWhite stroke-mainPurple`}/></span>
+        ) : <a className='text-mainPurple mt-2 italic font-bold decoration-0  hover:underline hover:decoration-2 mb-3' href={codepen} target="blank" rel="noreferrer">
+        Link to codepen  <span className='inline-block align-text-bottom'><ExternalLink addedStyles={`stroke-mainPurple`}/></span>
         </a> }</p>
       
       </div>
