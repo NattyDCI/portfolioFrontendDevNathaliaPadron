@@ -57,7 +57,7 @@ const ProjectSection = () => {
             </>
          
         )}
-        <div className=" max-auto min-w-[95%] max-w-[160rem] text-5xl flex justify-between absolute xs:max-ss:top-[46.6%] sm:max-md:top-[46.8%] md:top-[44.8%] lg:top-[43.9%] top-[46.7%] translate-x[-50%] z-7 cursor-pointer">
+        <div className=" max-auto min-w-[95%] max-w-[160rem] text-5xl flex justify-between absolute xs:top-[46.4%] ss:top-[46.6%] sm:max-md:top-[43.8%] md:top-[44.8%] lg:top-[43.9%] top-[46.7%] translate-x[-50%] z-7 cursor-pointer">
           <ArrowtoLeft addedStyles="arrow dark:fill-white fill-offDark text-offDark" />
           <ArrowtoLeft addedStyles="arrow dark:fill-white fill-offDark ransform rotate-180" />
         </div>

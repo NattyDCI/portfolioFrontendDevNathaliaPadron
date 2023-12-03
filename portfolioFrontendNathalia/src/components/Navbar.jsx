@@ -6,6 +6,7 @@ import { CloseIcon, HamburgerIcon } from "../assets";
 import { MainContext } from "../Context";
 import { Moon } from "../assets";
 import styles from "../style";
+import { logo_Nat_Website } from "../assets";
 
 
 const Navbar = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav id="home" className="navbar w-full flex justify-between items-center py-3 dark:bg-primary bg-offWhite">
-      <p className="font-opensans font-semibold text-xs dark:text-white text-primary flex-nowrap">Nathalia Padron</p>
+      <img src={logo_Nat_Website} className={`w-[90px] h-[full]`}/>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li onClick={toggleTheme} className="cursor-pointer">
         <Moon addedStyles={"dark:fill-white"}/>
