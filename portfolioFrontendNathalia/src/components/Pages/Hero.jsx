@@ -9,7 +9,7 @@ const Hero = () => {
   const { contactRef, heroRef } = useContext(MainContext);
   const buttonText = "Get in Touch!"
   return (
-    <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center my-8`}>
+    <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center xs:my-24 my-8`}>
       <div className={`grid gap-4 dark:bg-primary bg-offWhite xs:grid-cols-2`}>
         <div> 
           <h2 className="font-oswald font-regular mb-2 text-gray-950 dark:text-offWhite text-4xl leading-2">
@@ -19,7 +19,7 @@ const Hero = () => {
           </p> 
           <p className="font-opensans font-normal dark:text-white text-offDark text-[18px]"> Based in Stuttgart, Germany.</p>
           <div className="ss:block hidden">
-            < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10 font-[30px]"/>
+            < StyledButton reference={contactRef} parragraf={buttonText} width={`fit`} className="mt-10"/>
           </div>
         </div>
         

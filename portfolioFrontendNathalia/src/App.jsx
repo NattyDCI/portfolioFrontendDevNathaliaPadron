@@ -27,7 +27,7 @@ const App = () => {
             
         </div>
       </div>
-      <div className='md:block hidden'>
+      <div className='xs:block hidden'>
         <hr className="flex-grow border-t dark:border-gray-300 border-black z-1"></hr>
       </div>
 
