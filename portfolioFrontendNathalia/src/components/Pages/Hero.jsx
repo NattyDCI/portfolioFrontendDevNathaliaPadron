@@ -10,7 +10,7 @@ const Hero = () => {
   const buttonText = "Get in Touch!"
   return (
     <section id="home" ref={heroRef} className={`min-h-screen flex flex-col content-center items-center my-8`}>
-      <div className={`grid gap-4 dark:bg-primary bg-offWhite ss:grid-cols-2`}>
+      <div className={`grid gap-4 dark:bg-primary bg-offWhite xs:grid-cols-2`}>
         <div> 
           <h2 className="font-oswald font-regular mb-2 text-gray-950 dark:text-offWhite text-4xl leading-2">
             <span className="text-3xl mr-2">Junior</span><br className="md:hidden block" />FRONT-END DEVELOPER</h2>
@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         
         <div className={`mx-auto`}>
-          <img src={Illustration_bewerbung12} alt="profile photo" className={`min-w-[150px] max-w-sm h-[full] z-[5]`} />
+          <img src={Illustration_bewerbung12} alt="profile photo" className={`min-w-[4rem] max-w-[14rem] h-auto z-[5] mx-auto`} />
           {/* 
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
