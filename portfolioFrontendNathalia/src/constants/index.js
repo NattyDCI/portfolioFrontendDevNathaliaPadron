@@ -25,7 +25,7 @@ export const features = [
         id: "feature-1",
         icon: "agile",
         title: "Agile",
-        content: "I am familiar working with an Agile framework, active in planning and setting prios for improving the UI with each iteration.", 
+        content: "I am familiar working with an Agile framework. I enjoy being an active team-player in the planning and improvement of a digital product. ", 
     },
     {
         id: "feature-2",
@@ -37,7 +37,7 @@ export const features = [
         id: "feature-3",
         icon: "multicultural",
         title: "Multicultural",
-        content: "I consider myself as an adaptable and open individual. I believe that practicing non-violent communication brings a positive vibe to the work place.", 
+        content: "I consider myself as an adaptable and open individual. I believe that practicing non-violent is key when it comes to conflict solving. ", 
     },
 ]
 
@@ -57,7 +57,7 @@ export const about =
         },
         {   
             name: "parragraf3",
-            content: " I'm a Junior Front-end Developer born in Caracas, Venezuela based in Stuttgart, since 2016. I have both Italian and Venezuelan citizenship and I can speak English and German.",
+            content: " I'm a Junior Front-end Developer born in Caracas, Venezuela based in Stuttgart, since 2016. I have both Italian and Venezuelan citizenship and experience working on a multicultural environment. I consider myself as an open and flexible individual and make it a point to learn about other peoples cultures and perspectives. ",
         },
         {   
             name: "parragraf4",
@@ -93,7 +93,7 @@ export const about =
         },
         {   
             name: "parragraf12",
-            content: "I feel comfortable working with",
+            content: "I excel at working with ",
         },
         {   
             name: "parragraf13",
