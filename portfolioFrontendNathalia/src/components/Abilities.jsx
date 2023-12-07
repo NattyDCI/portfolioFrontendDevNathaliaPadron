@@ -17,9 +17,9 @@ const Abilities = () => {
     return null  }
 
   return (
-    <div className={`grid xs:gap-6 gap-2 grid-cols-3 mt-6 max-w-4xl xs:w-[95%] sm:w-[98%] md:w-[90%] lg:w-[75%] w-70%`}>
+    <div className={`grid xs:gap-6 gap-2 grid-cols-3 mt-6 max-w-4xl xs:w-[95%] sm:w-[98%] md:w-[90%] lg:w-[75%] w-70% mt-[4rem]`}>
       {features.map((feat, index) => 
-        <div key={feat.id} className={`border-2  dark:border-offWhite dark:bg-primary bg-slate-100 rounded-xl xs:p-4 p-2`}>
+        <div key={feat.id} className={`border-2  dark:border-offWhite dark:bg-primary bg-slate-100 rounded-sm xs:p-4 p-2`}>
             <div className={`${styles.flexCenter} flex-col text-center `}> 
               <div className={`${styles.flexCenter} xs:w-[50px] xs:h-[50px] w-[30px] h-[30px] `}>
                 {generateIconComponent(feat.icon)} 

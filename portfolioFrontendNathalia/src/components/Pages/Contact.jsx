@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <div
       ref={contactRef}
-      className={`flex-col w-full items-center justify-center pt-24`}
+      className={`flex-col w-full items-center justify-center pt-18`}
     >
       <div id="contact" className="pt-5">
         <div className="dark:text-white text-offDark text-center mx-auto text-4xl border-t-4  border-mainPurple  w-fit font-opensans font-bold">
@@ -87,7 +87,7 @@ const Contact = () => {
                   <input
                     type="name"
                     name="user_name"
-                    className="w-full border border-input-border rounded-xl bg-input px-4 py-4 bg-gray-200"
+                    className="w-full border border-input-border rounded-sm bg-input px-4 py-4 bg-gray-200"
                     required
                   />
                 </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                   <input
                     type="email"
                     name="user_email"
-                    className="w-full border border-input-border bg-input px-4 py-4 rounded-xl bg-gray-200"
+                    className="w-full border border-input-border bg-input px-4 py-4 rounded-sm bg-gray-200"
                     required
                   />
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   <textarea
                     type="message"
                     name="message"
-                    className="w-full border border-input-border bg-input px-4 pt-4 h-56 resize-none bg-gray-200 rounded-xl"
+                    className="w-full border border-input-border bg-input px-4 pt-4 h-56 resize-none bg-gray-200 rounded-sm"
                     required
                   ></textarea>
                 </div>

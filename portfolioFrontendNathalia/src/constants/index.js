@@ -133,7 +133,7 @@ export const about =
         },
         {   
             name: "parragraf22",
-            content: " technologie Stack", 
+            content: " technology Stack", 
         },
 
     ]

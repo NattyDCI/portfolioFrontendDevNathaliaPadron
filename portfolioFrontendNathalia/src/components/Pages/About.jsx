@@ -19,7 +19,7 @@ const About = () => {
             ABOUT
         </h1> 
       </div>
-      <div className={`${layout.section} ${styles.flexCenter} `}>
+      <div className={`${layout.section} ${styles.flexCenter} text-center `}>
   
           <div className={`flex w-full flex-col items-center`}>
             <div className='flex flex-grow flex-shrink flex-col w-[80%] '>
