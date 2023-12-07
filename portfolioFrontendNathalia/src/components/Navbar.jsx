@@ -21,8 +21,10 @@ const Navbar = () => {
   } = useContext(MainContext);
 
   function toggleTheme() {
-    document.documentElement.classList.toggle("dark")
+    document.documentElement.classList.toggle("dark");
+    window.dispatchEvent(new Event('darkModeChange'));
   }
+  
   function referenceGenerator (navId){
       if (navId === "home") {
         return heroRef

@@ -8,6 +8,7 @@ import { MainContext } from "../../Context";
 
 const About = () => {
 
+
   const { aboutRef } = useContext(MainContext)
   
 
@@ -63,6 +64,7 @@ const About = () => {
                 
                     )}
             </div>
+            
             
           </div>
             

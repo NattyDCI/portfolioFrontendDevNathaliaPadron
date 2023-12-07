@@ -1,4 +1,3 @@
-export { default as backtoTop } from "./backtoTop.png";
 export { default as cssLogo } from "./cssLogo.png";
 export { default as girlDesk3D } from "./girlDesk3D.png";
 export { default as htmlLogo } from "./htmlLogo.png";
@@ -33,4 +32,5 @@ export { default as HamburgerIcon } from "./HamburgerIcon.jsx";
 export { default as ArrowtoLeft } from "./ArrowtoLeft.jsx"
 export { default as ExternalLink } from "./ExternalLink.jsx";
 export { default as logo_Nat_Website } from "./logo_Nat_Website.png";
-export { default as Illustration_bewerbung12 } from "./Illustration_bewerbung12.png"
+export { default as Illustration_bewerbung12 } from "./Illustration_bewerbung12.png";
+export { default as BackToTop } from "./BackToTop.jsx"
