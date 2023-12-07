@@ -15,23 +15,7 @@ import { MainContext } from "./Context";
 import { BackToTop } from './assets';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(document.documentElement.classList.contains("dark"));
-  
  
-  useEffect(() => {
-    const updateDarkMode = () => {
-      setDarkMode(document.documentElement.classList.contains("dark"));
-    };
-
-    // Listen for changes to the dark mode class
-    window.addEventListener('darkModeChange', updateDarkMode);
-
-    // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('darkModeChange', updateDarkMode);
-    };
-  }, []); // Empty dependency array ensures the effect runs once on mount
-
 
   const { heroRef } = useContext(MainContext);
 
@@ -62,7 +46,7 @@ const App = () => {
           < Contact />
           < Footer />
           <div className='fixed bottom-[20px] right-[20px]'>
-              <BackToTop getStrokeColor={ () => darkMode ? "white" : "grey"}/>
+              <BackToTop />
             </div>
         </div>
       </div>

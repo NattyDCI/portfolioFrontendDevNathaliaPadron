@@ -1,40 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { Ripple, initTE } from "tw-elements";
 
-import {
-    Ripple,
-    initTE,
-  } from "tw-elements";
-  
-  initTE({ Ripple });
-  
+initTE({ Ripple });
 
-const BackToTop = ({getStrokeColor, addedStyles}) => {
+const BackToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-    const mybutton = document.getElementById("btn-back-to-top");
+  const scrollFunction = () => {
+    if (window.scrollY > 20) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-    const scrollFunction = () => {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.classList.remove("hidden");
-        } else {
-          mybutton.classList.add("hidden");
-        }
-      };
-      
-      const backToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      };   
+  const backToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollFunction);
+
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, []);
 
   return (
+    <button
+      width="50"
+      height="50"
+      onClick={backToTop}
+      type="button"
+      data-te-ripple-init
+      data-te-ripple-color="light"
+      className={`fixed bottom-5 right-5 ${isVisible ? '' : 'hidden'} rounded-full bg-purple-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg`}
+      id="btn-back-to-top"
+    >
+      <svg
+        className="h-4 w-4"
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </button>
+  );
+};
 
-    //<button id="btn-back-to-top" onClick={backToTop}></button>
-    <svg id="btn-back-to-top" onClick={backToTop} fill="none"  stroke={getStrokeColor()}
- className={addedStyles} viewBox="0 0 24 24" stroke-width="1.5" width="40" height="40">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
-    </svg>
-  )
-}
-
-export default BackToTop
+export default BackToTop;
