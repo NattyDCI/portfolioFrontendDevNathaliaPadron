@@ -235,7 +235,7 @@ export const Projects = [
         img: Mlay_Tours_Project,
         url: "https://mlaytours.onrender.com/",
         repo: "https://github.com/Final-Project-Group-4/Backend-Project",
-        para: "Mern Stack Project for company that offers trips to Tanzania. Features include Server Side Programming and language translation support. "
+        para: "Mern Stack Project for company that offers trips to Tanzania. Features Server-Side Programming and language translation. "
     },
     {
         id: "2",
@@ -243,15 +243,15 @@ export const Projects = [
         img: Neuromorphic_music_player,
         url: "https://codepen.io/nattydci/pen/LYeYOGY",
         codepen: "https://codepen.io/nattydci/pen/LYeYOGY",
-        para: "Small Project showing CSS skills and the use of Neuromorphic elements, focused on CSS styling. Click to find a link to my codepen. "
+        para: "Small Project showing CSS skills and the use of Neuromorphic elements, focused on CSS styling. "
     },
     {
         id:"3",
-        title: 'E-commerce "All things Interior"',
+        title: '"All things Interior"',
         img: eCommerce_Thumbnail,
         url: "https://all-things-interior.netlify.app/",
         repo: "https://github.com/NattyDCI/e-commerce-react-app",
-        para: "Experienced with a CSS utility framework. Experimented with operations in React using Context for state management. " 
+        para: "React Project let me experience with CSS framework SASS. Used Context for state management. Only optimized for Desktop. "
     },
     {
         id: "4",
@@ -259,7 +259,7 @@ export const Projects = [
         img: Animation_puppy,
         url: "https://codepen.io/nattydci/pen/OJzRbLR",
         codepen:"https://codepen.io/nattydci/pen/OJzRbLR",
-        para: "Animation shows text sliding into the frame. This exercise let me experiment with animations done solely with CSS, click to find a link to my codepen. "
+        para: "This exercise let me experiment with animations done solely with CSS, click to find a link to my codepen. "
 
     }
     
@@ -289,7 +289,7 @@ export const Projects2 = [
         img: ticTacToeThumbnail,
         url: "https://codepen.io/nattydci/pen/NWoMVpe",
         codepen: "https://codepen.io/nattydci/pen/NWoMVpe",
-        para: "tic-tac-toe game let me experiment State management. Game will stop as soon as there is a winner and let's you restart the game. "
+        para: "Excercise let me experiment State management. Game will stop as soon as there is a winner and restart. "
 
     },
     {

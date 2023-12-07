@@ -53,7 +53,7 @@ const Navbar = () => {
             } `}
           >
             <button onClick={() => heroScrollHandler(referenceGenerator(nav.id))} 
-            className={`${styles.flexCenter} text-xl dark:text-offWhite text-offDark  hover:bg-purple-400 w-full h-[60px]cursor-pointer right-4 p-2`}> 
+            className={`${styles.flexCenter} text-xl dark:text-offWhite text-offDark  hover:bg-purple-300 w-full h-[60px] cursor-pointer right-4 p-2`}> 
               {nav.title}     
             </button>
           </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
           className={`${toggle ? "flex" : "hidden"} p-6
           dark:bg-primary bg-offWhite
         absolute z-[10] top-20 right-0 mx-4
-        my-2 min-w-[200px] min-h-[300px] rounded-xl 
+        my-2 min-w-[200px] min-h-[300px] rounded-sm 
         sidebar items-center border-2 dark:border-slate-700 border-slate-80 border-pink-80`}
         >
           <ul
