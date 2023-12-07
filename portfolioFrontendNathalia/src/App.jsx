@@ -45,7 +45,7 @@ const App = () => {
           < About />
           < Contact />
           < Footer />
-          <div className='fixed bottom-[20px] right-[20px]'>
+          <div className='fixed bottom-[20px] right-[20px] z-20'>
               <BackToTop />
             </div>
         </div>
